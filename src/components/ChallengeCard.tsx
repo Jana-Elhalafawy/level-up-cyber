@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { LucideIcon } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 interface ChallengeCardProps {
   icon: LucideIcon;
@@ -14,10 +16,35 @@ const ChallengeCard = ({
   icon: Icon, 
   title, 
   description, 
-  progress, 
+  progress: initialProgress, 
   totalChallenges,
-  completedChallenges 
+  completedChallenges: initialCompleted 
 }: ChallengeCardProps) => {
+  const navigate = useNavigate();
+  const [progress, setProgress] = useState(initialProgress);
+  const [completedChallenges, setCompletedChallenges] = useState(initialCompleted);
+
+  useEffect(() => {
+    // Update progress from localStorage for phishing simulation
+    if (title === "Phishing Simulation") {
+      const savedProgress = localStorage.getItem('phishing-progress');
+      if (savedProgress) {
+        const progressData = JSON.parse(savedProgress);
+        const newProgress = Math.round((progressData.completed / progressData.total) * 100);
+        setProgress(newProgress);
+        setCompletedChallenges(progressData.completed);
+      }
+    }
+  }, [title]);
+
+  const handleStartLearning = () => {
+    if (title === "Phishing Simulation") {
+      navigate('/phishing-intro');
+    } else {
+      // Handle other modules in the future
+      console.log(`Starting ${title} module`);
+    }
+  };
   return (
     <div className="cyber-card p-6 group">
       <div className="flex items-center mb-4">
@@ -52,7 +79,7 @@ const ChallengeCard = ({
         </span>
       </div>
       
-      <Button className="cyber-button w-full">
+      <Button className="cyber-button w-full" onClick={handleStartLearning}>
         Start Learning
       </Button>
     </div>
