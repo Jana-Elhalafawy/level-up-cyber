@@ -31,7 +31,7 @@ const challenges: Challenge[] = [
     image: email1,
     isPhishing: true,
     content: "Your PayPal account has been suspended. Please verify your account immediately by clicking the link below. Failure to do so will result in permanent closure.",
-    explanation: "This is phishing because it uses urgency tactics, threatens account closure, and asks you to click a suspicious link to verify personal information."
+    explanation: "This email is phishing because:It creates a sense of concern by suggesting someone submitted negative or sensitive feedback. It urges you to click a link to view details instead of using official HR communication channels.The sender name “Automated HR Solutions” and the generic company reference are vague and not verifiable."
   },
   {
     id: 2,
