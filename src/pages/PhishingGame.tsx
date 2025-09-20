@@ -30,12 +30,8 @@ const challenges: Challenge[] = [
     id: 1,
     image: email1,
     isPhishing: true,
-    content: "An anonymous colleague has submitted feedback about your recent workplace interactions.
-              For confidentiality reasons, the content cannot be shared through normal email.
-              Please click the secure link below to view and respond to this feedback",
-    explanation: "This email is phishing because it creates a sense of concern by suggesting someone submitted negative or sensitive feedback.
-                  It urges you to click a link to view details instead of using official HR communication channels.
-                  The sender name “Automated HR Solutions” and the generic company reference are vague and not verifiable."
+    content: "Your PayPal account has been suspended. Please verify your account immediately by clicking the link below. Failure to do so will result in permanent closure.",
+    explanation: "This is phishing because it uses urgency tactics, threatens account closure, and asks you to click a suspicious link to verify personal information."
   },
   {
     id: 2,
