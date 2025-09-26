@@ -38,8 +38,7 @@ const challenges: Challenge[] = [
     image: email2,
     isPhishing: false,
     content: "You have received an email that looks like an Apple invoice, claiming you were charged $89.99 for iCloud+ storage and giving fake details such as an order ID, document number, and masked card number. The message urges you to click a link to cancel or dispute the charge. This is phishing because the details are fabricated, and Apple never sends invoice disputes through email links—real billing information is only available in your official Apple account or App Store.",
-    explanation: "Why this is phishing?
-      This email is phishing because it pretends to be an Apple invoice to make you believe you were wrongly charged. It uses fake billing details and an urgent link to trick you into clicking. Real Apple invoices only appear in your official Apple account or App Store, not through random email links."
+    explanation: "Why this is phishing? This email is phishing because it pretends to be an Apple invoice to make you believe you were wrongly charged. It uses fake billing details and an urgent link to trick you into clicking. Real Apple invoices only appear in your official Apple account or App Store, not through random email links."
   },
   {
     id: 3,
