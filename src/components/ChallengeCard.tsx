@@ -50,6 +50,8 @@ const ChallengeCard = ({
       navigate('/phishing-intro');
     } else if (title === "CTF Challenges") {
       navigate('/least-privilege-intro');
+    } else if (title === "Security Quiz") {
+      navigate('/security-quiz-intro');
     } else {
       // Handle other modules in the future
       console.log(`Starting ${title} module`);
