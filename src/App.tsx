@@ -7,6 +7,9 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PhishingIntro from "./pages/PhishingIntro";
 import PhishingGame from "./pages/PhishingGame";
+import LeastPrivilegeIntro from "./pages/LeastPrivilegeIntro";
+import LeastPrivilegeGame from "./pages/LeastPrivilegeGame";
+import LeastPrivilegeIncident from "./pages/LeastPrivilegeIncident";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +23,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/phishing-intro" element={<PhishingIntro />} />
           <Route path="/phishing-game" element={<PhishingGame />} />
+          <Route path="/least-privilege-intro" element={<LeastPrivilegeIntro />} />
+          <Route path="/least-privilege-game" element={<LeastPrivilegeGame />} />
+          <Route path="/least-privilege-incident" element={<LeastPrivilegeIncident />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

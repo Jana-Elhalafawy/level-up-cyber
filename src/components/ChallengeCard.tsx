@@ -25,9 +25,17 @@ const ChallengeCard = ({
   const [completedChallenges, setCompletedChallenges] = useState(initialCompleted);
 
   useEffect(() => {
-    // Update progress from localStorage for phishing simulation
+    // Update progress from localStorage for different modules
     if (title === "Phishing Simulation") {
       const savedProgress = localStorage.getItem('phishing-progress');
+      if (savedProgress) {
+        const progressData = JSON.parse(savedProgress);
+        const newProgress = Math.round((progressData.completed / progressData.total) * 100);
+        setProgress(newProgress);
+        setCompletedChallenges(progressData.completed);
+      }
+    } else if (title === "CTF Challenges") {
+      const savedProgress = localStorage.getItem('least-privilege-progress');
       if (savedProgress) {
         const progressData = JSON.parse(savedProgress);
         const newProgress = Math.round((progressData.completed / progressData.total) * 100);
@@ -40,6 +48,8 @@ const ChallengeCard = ({
   const handleStartLearning = () => {
     if (title === "Phishing Simulation") {
       navigate('/phishing-intro');
+    } else if (title === "CTF Challenges") {
+      navigate('/least-privilege-intro');
     } else {
       // Handle other modules in the future
       console.log(`Starting ${title} module`);
