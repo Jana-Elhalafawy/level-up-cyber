@@ -2,7 +2,7 @@ import {
   Flag, 
   Shield, 
   Code, 
-  Bug, 
+  Lock, 
   Brain 
 } from "lucide-react";
 import Header from "@/components/Header";
@@ -36,9 +36,9 @@ const Index = () => {
       completedChallenges: 7
     },
     {
-      icon: Bug,
-      title: "Vulnerability Lab",
-      description: "Hands-on vulnerability assessment and exploitation",
+      icon: Lock,
+      title: "Encryption",
+      description: "Caesar cipher challenges for digital forensics specialists",
       progress: 30,
       totalChallenges: 10,
       completedChallenges: 3

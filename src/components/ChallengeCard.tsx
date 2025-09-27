@@ -42,6 +42,14 @@ const ChallengeCard = ({
         setProgress(newProgress);
         setCompletedChallenges(progressData.completed);
       }
+    } else if (title === "Encryption") {
+      const savedProgress = localStorage.getItem('encryption-progress');
+      if (savedProgress) {
+        const progressData = JSON.parse(savedProgress);
+        const newProgress = Math.round((progressData.completed / progressData.total) * 100);
+        setProgress(newProgress);
+        setCompletedChallenges(progressData.completed);
+      }
     }
   }, [title]);
 
@@ -52,6 +60,8 @@ const ChallengeCard = ({
       navigate('/least-privilege-intro');
     } else if (title === "Security Quiz") {
       navigate('/security-quiz-intro');
+    } else if (title === "Encryption") {
+      navigate('/encryption-intro');
     } else {
       // Handle other modules in the future
       console.log(`Starting ${title} module`);
