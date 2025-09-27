@@ -40,9 +40,9 @@ const levels: Level[] = [
     encryptedText: "KHOOR",
     correctAnswer: "HELLO",
     hints: ["Try shift 3", "H becomes K when shifted forward by 3"],
-    timeSeconds: 60,
+    timeSeconds: 300,
     basePoints: 10,
-    hintCost: { points: 3, time: 100 },
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -53,9 +53,9 @@ const levels: Level[] = [
     encryptedText: "PHHW DW FDIH",
     correctAnswer: "MEET AT CAFE",
     hints: ["Same shift as previous", "Shift back by 3"],
-    timeSeconds: 45,
+    timeSeconds: 300,
     basePoints: 10,
-    hintCost: { points: 3, time: 100 },
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -66,9 +66,9 @@ const levels: Level[] = [
     encryptedText: "SODQ LV UHDGB",
     correctAnswer: "PLAN IS READY",
     hints: ["Try shift 3 again", "Same pattern as before"],
-    timeSeconds: 45,
+    timeSeconds: 300,
     basePoints: 10,
-    hintCost: { points: 3, time: 100 },
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -79,9 +79,9 @@ const levels: Level[] = [
     encryptedText: "XEVKIX MW FERQ QEREKIV NSLR",
     correctAnswer: "TARGET IS BANK MANAGER JOHN",
     hints: ["Try shift 4", "X becomes T when shifted back by 4"],
-    timeSeconds: 40,
+    timeSeconds: 300,
     basePoints: 10,
-    hintCost: { points: 3, time: 100 },
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -92,9 +92,9 @@ const levels: Level[] = [
     encryptedText: "FHYNAFYJ GFHPITTU FY 3000",
     correctAnswer: "ACTIVATE BACKDOOR AT 3000",
     hints: ["Numbers stay the same", "Try shift 6"],
-    timeSeconds: 35,
+    timeSeconds: 300,
     basePoints: 10,
-    hintCost: { points: 3, time: 100 },
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -105,9 +105,9 @@ const levels: Level[] = [
     encryptedText: "NKTUV JCNM: ECUJ UGEQPF JCNM: FTCIQP",
     correctAnswer: "FIRST HALF: CASH SECOND HALF: DRAGON",
     hints: ["All one shift pattern", "Try shift 10"],
-    timeSeconds: 30,
+    timeSeconds: 300,
     basePoints: 10,
-    hintCost: { points: 3, time: 200 },
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -118,9 +118,9 @@ const levels: Level[] = [
     encryptedText: "NPPRFF VA GENAFSR",
     correctAnswer: "ACCESS IN TRANSFER",
     hints: ["Try shift 13", "A becomes N when shifted forward by 13"],
-    timeSeconds: 25,
+    timeSeconds: 300,
     basePoints: 10,
-    hintCost: { points: 3, time: 200 },
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -131,9 +131,9 @@ const levels: Level[] = [
     encryptedText: "FrYrPG * SEBZ hFrE_GnOYr JUrEr NTr > 25",
     correctAnswer: "SeLeCT * FROM uSeR_TaBLe WHeRe AGe > 25",
     hints: ["Preserve case pattern", "Try shift 13 but keep upper/lower case"],
-    timeSeconds: 20,
+    timeSeconds: 300,
     basePoints: 10,
-    hintCost: { points: 3, time: 400 },
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -144,9 +144,9 @@ const levels: Level[] = [
     encryptedText: "MYVVELYK PZ OHUKSL DPAO JHZO HUK ZLHZ MVPZ",
     correctAnswer: "PASSWORD IS HANDLE WITH CASH AND SEAS FOIS",
     hints: ["Try a larger shift", "Shift 19 - letters wrap around"],
-    timeSeconds: 15,
+    timeSeconds: 300,
     basePoints: 10,
-    hintCost: { points: 3, time: 400 },
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -157,9 +157,9 @@ const levels: Level[] = [
     encryptedText: "QVMZO OEEORX TM YOMU DOENCSOL OE SKVM. VDROTTV UZOM OREVPV. OZZ EVOLD CVOSB QTC YUVCOETYM YZEV QVYVC.",
     correctAnswer: "FINAL ATTACK ON BANK SATURDAY AT DAWN. ESCAPE PLAN ACTIVE. ALL TEAMS READY FOR OPERATION BLUE FIBER.",
     hints: ["Maximum shift - try 22", "This is the hardest one"],
-    timeSeconds: 20,
+    timeSeconds: 300,
     basePoints: 10,
-    hintCost: { points: 3, time: 500 },
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   }
 ];
