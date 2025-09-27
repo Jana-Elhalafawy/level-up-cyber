@@ -40,7 +40,7 @@ const levels: Level[] = [
     encryptedText: "KHOOR",
     correctAnswer: "HELLO",
     hints: ["Try shift 3", "H becomes K when shifted forward by 3"],
-    timeSeconds: 300,
+    timeSeconds: 400,
     basePoints: 10,
     hintCost: { points: 3, time: 10 },
     maxAttempts: 5
