@@ -37,9 +37,9 @@ const levels: Level[] = [
     title: "File 1 — Welcome Note",
     scenario: "Found in the Desktop folder, appears to be the hacker's entry message.",
     image: level1Image,
-    encryptedText: "KHOOR ZRUOG",
-    correctAnswer: "HELLO WORLD",
-    hints: ["Shift likely between 1 and 5", "Try shifting each letter back 3 positions"],
+    encryptedText: "KHOOR",
+    correctAnswer: "HELLO",
+    hints: ["Try shift 3", "H becomes K when shifted forward by 3"],
     timeSeconds: 60,
     basePoints: 10,
     hintCost: { points: 3, time: 10 },
@@ -50,12 +50,12 @@ const levels: Level[] = [
     title: "File 2 — Meeting Notes",
     scenario: "Located in Documents/Personal, mentions a meeting location.",
     image: level2Image,
-    encryptedText: "PHHW DW FDIH PLGQLJKW",
-    correctAnswer: "MEET AT CAFE MIDNIGHT",
-    hints: ["Same shift pattern as previous file", "Check the cafe name - common shift of 3"],
-    timeSeconds: 75,
-    basePoints: 12,
-    hintCost: { points: 4, time: 12 },
+    encryptedText: "PHHW DW FDIH",
+    correctAnswer: "MEET AT CAFE",
+    hints: ["Same shift as previous", "Shift back by 3"],
+    timeSeconds: 45,
+    basePoints: 10,
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -63,12 +63,12 @@ const levels: Level[] = [
     title: "File 3 — Email Draft",
     scenario: "Draft email found in temp folder, never sent but contains plans.",
     image: level3Image,
-    encryptedText: "SODQ LV UHDGB IRU DWWDFN",
-    correctAnswer: "PLAN IS READY FOR ATTACK",
-    hints: ["Continue with the established pattern", "D becomes A, shift back by 3"],
-    timeSeconds: 90,
-    basePoints: 15,
-    hintCost: { points: 5, time: 15 },
+    encryptedText: "SODQ LV UHDGB",
+    correctAnswer: "PLAN IS READY",
+    hints: ["Try shift 3 again", "Same pattern as before"],
+    timeSeconds: 45,
+    basePoints: 10,
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -76,12 +76,12 @@ const levels: Level[] = [
     title: "File 4 — Chat Backup",
     scenario: "Encrypted chat messages from secure messaging app backup.",
     image: level4Image,
-    encryptedText: "WDUJHW LV EDQN PDQDJHU MRKQ",
+    encryptedText: "XEVKIX MW FERQ QEREKIV NSLR",
     correctAnswer: "TARGET IS BANK MANAGER JOHN",
-    hints: ["Same cipher method continues", "WDUJHW starts with T - count the shift"],
-    timeSeconds: 110,
-    basePoints: 18,
-    hintCost: { points: 6, time: 18 },
+    hints: ["Try shift 4", "X becomes T when shifted back by 4"],
+    timeSeconds: 40,
+    basePoints: 10,
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -89,38 +89,38 @@ const levels: Level[] = [
     title: "File 5 — Operations Log",
     scenario: "Found in hidden system folder, tracks operational timeline.",
     image: level5Image,
-    encryptedText: "DFWLYDWH EDFNGRRU DW 3000",
+    encryptedText: "FHYNAFYJ GFHPITTU FY 3000",
     correctAnswer: "ACTIVATE BACKDOOR AT 3000",
-    hints: ["Numbers stay the same, only letters shift", "A becomes D when shifted forward by 3"],
-    timeSeconds: 140,
-    basePoints: 22,
-    hintCost: { points: 7, time: 21 },
+    hints: ["Numbers stay the same", "Try shift 6"],
+    timeSeconds: 35,
+    basePoints: 10,
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
     id: 6,
-    title: "File 6 — Double Encrypted",
-    scenario: "Complex file with two-part encryption found on encrypted drive.",
+    title: "File 6 — Double Message",
+    scenario: "Complex file with important information found on encrypted drive.",
     image: level6Image,
-    encryptedText: "ILUVW KDOI: FDVK VHFRQG KDOI: GLDJRQ",
+    encryptedText: "NKTUV JCNM: ECUJ UGEQPF JCNM: FTCIQP",
     correctAnswer: "FIRST HALF: CASH SECOND HALF: DRAGON",
-    hints: ["Two segments, both use Caesar shift", "Both halves use the same shift pattern"],
-    timeSeconds: 160,
-    basePoints: 26,
-    hintCost: { points: 9, time: 24 },
+    hints: ["All one shift pattern", "Try shift 10"],
+    timeSeconds: 30,
+    basePoints: 10,
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
     id: 7,
     title: "File 7 — Network Logs",
-    scenario: "Network access logs with decoy characters inserted.",
+    scenario: "Network access logs with important security information.",
     image: level7Image,
-    encryptedText: "D#F#F#H#V#V L#Q# W#U#D#Q#V#I#H#U",
+    encryptedText: "NPPRFF VA GENAFSR",
     correctAnswer: "ACCESS IN TRANSFER",
-    hints: ["Ignore every character with # symbol", "Remove # characters first, then apply Caesar shift"],
-    timeSeconds: 180,
-    basePoints: 30,
-    hintCost: { points: 10, time: 30 },
+    hints: ["Try shift 13", "A becomes N when shifted forward by 13"],
+    timeSeconds: 25,
+    basePoints: 10,
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -128,25 +128,25 @@ const levels: Level[] = [
     title: "File 8 — Database Query",
     scenario: "Encrypted database access query with mixed case preserved.",
     image: level8Image,
-    encryptedText: "VhOhFW * IURP XvHu_WdEOh ZKhUh DJh > 25",
+    encryptedText: "FrYrPG * SEBZ hFrE_GnOYr JUrEr NTr > 25",
     correctAnswer: "SeLeCT * FROM uSeR_TaBLe WHeRe AGe > 25",
-    hints: ["Preserve exact case pattern", "Shift each letter but keep upper/lower case intact"],
-    timeSeconds: 210,
-    basePoints: 35,
-    hintCost: { points: 12, time: 36 },
+    hints: ["Preserve case pattern", "Try shift 13 but keep upper/lower case"],
+    timeSeconds: 20,
+    basePoints: 10,
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
     id: 9,
-    title: "File 9 — Corrupted Evidence",
-    scenario: "Partially corrupted file with missing characters marked as #.",
+    title: "File 9 — Security Protocol",
+    scenario: "Important security protocol document with access instructions.",
     image: level9Image,
-    encryptedText: "SD##ZRUG LV # KDQG OH ## FDVK",
-    correctAnswer: "PASSWORD IS HANDLE WITH CASH",
-    hints: ["Missing letters marked with #, deduce from context", "Common words: PASSWORD, HANDLE, WITH, CASH"],
-    timeSeconds: 240,
-    basePoints: 40,
-    hintCost: { points: 15, time: 48 },
+    encryptedText: "MYVVELYK PZ OHUKSL DPAO JHZO HUK ZLHZ MVPZ",
+    correctAnswer: "PASSWORD IS HANDLE WITH CASH AND SEAS FOIS",
+    hints: ["Try a larger shift", "Shift 19 - letters wrap around"],
+    timeSeconds: 15,
+    basePoints: 10,
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   },
   {
@@ -154,12 +154,12 @@ const levels: Level[] = [
     title: "File 10 — Master Plan",
     scenario: "The final encrypted master plan document from the main evidence folder.",
     image: level10Image,
-    encryptedText: "ILQDO DWWDFN RQ EDQN VDXUGDB DW GDZQ. HVFDSH SODQ DFWLYH. DOO WHDPV UHDGB IRU RSHUDWLRQ EOXH ILEHU.",
+    encryptedText: "QVMZO OEEORX TM YOMU DOENCSOL OE SKVM. VDROTTV UZOM OREVPV. OZZ EVOLD CVOSB QTC YUVCOETYM YZEV QVYVC.",
     correctAnswer: "FINAL ATTACK ON BANK SATURDAY AT DAWN. ESCAPE PLAN ACTIVE. ALL TEAMS READY FOR OPERATION BLUE FIBER.",
-    hints: ["Longest message but same pattern throughout", "ILQDO = FINAL, apply same shift to entire message"],
-    timeSeconds: 300,
-    basePoints: 50,
-    hintCost: { points: 20, time: 60 },
+    hints: ["Maximum shift - try 22", "This is the hardest one"],
+    timeSeconds: 20,
+    basePoints: 10,
+    hintCost: { points: 3, time: 10 },
     maxAttempts: 5
   }
 ];
@@ -169,6 +169,7 @@ const EncryptionGame = () => {
   const { toast } = useToast();
   const [currentLevel, setCurrentLevel] = useState(0);
   const [userInput, setUserInput] = useState("");
+  const [selectedShift, setSelectedShift] = useState(1);
   const [timeLeft, setTimeLeft] = useState(levels[0].timeSeconds);
   const [score, setScore] = useState(0);
   const [attempts, setAttempts] = useState(0);
@@ -176,6 +177,7 @@ const EncryptionGame = () => {
   const [feedback, setFeedback] = useState("");
   const [gameResults, setGameResults] = useState<any[]>([]);
   const [isLocked, setIsLocked] = useState(false);
+  const [evidenceFragments, setEvidenceFragments] = useState<string[]>([]);
 
   // Timer effect
   useEffect(() => {
@@ -213,6 +215,29 @@ const EncryptionGame = () => {
       .join('');
   };
 
+  const generateShiftedAlphabet = (shift: number): string => {
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    return alphabet.split('').map(letter => 
+      String.fromCharCode(((letter.charCodeAt(0) - 65 + shift) % 26) + 65)
+    ).join(' ');
+  };
+
+  const getEvidenceFragment = (levelId: number): string => {
+    const fragments = [
+      "Hacker's welcome message confirmed",
+      "Meeting location: downtown cafe",
+      "Attack plan is ready",
+      "Target: bank manager John",
+      "Backdoor activation at 3AM",
+      "Two-part security bypass",
+      "Network access compromised",
+      "Database credentials stolen",
+      "Password security breached",
+      "Full operation scheduled for Saturday dawn"
+    ];
+    return fragments[levelId - 1] || "Evidence fragment recovered";
+  };
+
   const handleTimeout = useCallback(() => {
     setIsLocked(true);
     const result = {
@@ -247,6 +272,9 @@ const EncryptionGame = () => {
       setScore(prev => prev + points);
       setIsLocked(true);
       
+      const evidenceFragment = getEvidenceFragment(currentLevel + 1);
+      setEvidenceFragments(prev => [...prev, evidenceFragment]);
+      
       const result = {
         level: currentLevel + 1,
         points,
@@ -254,15 +282,16 @@ const EncryptionGame = () => {
         hintsUsed,
         attempts: attempts + 1,
         status: 'success',
-        correctAnswer: currentLevelData.correctAnswer
+        correctAnswer: currentLevelData.correctAnswer,
+        evidence: evidenceFragment
       };
       setGameResults(prev => [...prev, result]);
       
-      setFeedback(`Correct! The message reads: ${currentLevelData.correctAnswer}. Evidence logged for incident report.`);
+      setFeedback(`Decrypted successfully! File unlocked. Evidence: ${evidenceFragment}`);
       
       toast({
         title: "File Decrypted!",
-        description: `+${points} points`,
+        description: `Evidence recovered: ${evidenceFragment}`,
       });
 
       setTimeout(() => nextLevel(), 3000);
@@ -285,7 +314,7 @@ const EncryptionGame = () => {
         setFeedback(`Maximum attempts reached. The correct answer was: ${currentLevelData.correctAnswer}`);
         setTimeout(() => nextLevel(), 3000);
       } else {
-        setFeedback(`Incorrect. Check shift, case, and any special characters. Attempts left: ${currentLevelData.maxAttempts - newAttempts}`);
+        setFeedback(`Decryption failed. File remains locked. Attempts left: ${currentLevelData.maxAttempts - newAttempts}. Remember: weak encryption allows hackers to succeed.`);
       }
     }
   };
@@ -328,11 +357,13 @@ const EncryptionGame = () => {
       localStorage.setItem('encryption-results', JSON.stringify({
         score,
         results: gameResults,
-        totalLevels: levels.length
+        totalLevels: levels.length,
+        evidenceFragments
       }));
       navigate('/encryption-results');
     } else {
       setCurrentLevel(prev => prev + 1);
+      setSelectedShift(1); // Reset shift selection for next level
     }
   };
 
@@ -373,6 +404,19 @@ const EncryptionGame = () => {
           </div>
         </div>
 
+        {/* Alphabet Helper */}
+        <div className="cyber-card p-4 mb-6">
+          <h3 className="font-bold mb-3">Caesar Cipher Helper:</h3>
+          <div className="space-y-2">
+            <div className="text-sm">
+              <span className="font-mono">Normal:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>
+            </div>
+            <div className="text-sm">
+              <span className="font-mono text-[hsl(var(--cyber-cyan))]">Shift {selectedShift}: {generateShiftedAlphabet(selectedShift)}</span>
+            </div>
+          </div>
+        </div>
+
         {/* Main Game Area */}
         <div className="grid lg:grid-cols-2 gap-6">
           {/* Left Column - File Info */}
@@ -392,7 +436,7 @@ const EncryptionGame = () => {
             {/* Encrypted Content */}
             <div className="cyber-card p-6">
               <h3 className="font-bold mb-4">Encrypted File Content:</h3>
-              <div className="bg-background/50 p-4 rounded-lg font-mono text-[hsl(var(--cyber-cyan))] break-all">
+              <div className="bg-background/50 p-4 rounded-lg font-mono text-[hsl(var(--cyber-cyan))] break-all text-lg">
                 {currentLevelData.encryptedText}
               </div>
             </div>
@@ -400,6 +444,26 @@ const EncryptionGame = () => {
 
           {/* Right Column - Controls */}
           <div className="space-y-6">
+            {/* Shift Selection */}
+            <div className="cyber-card p-6">
+              <h3 className="font-bold mb-4">Select Caesar Shift:</h3>
+              <div className="flex items-center gap-4">
+                <label htmlFor="shift-select" className="text-sm">Shift by:</label>
+                <select
+                  id="shift-select"
+                  value={selectedShift}
+                  onChange={(e) => setSelectedShift(Number(e.target.value))}
+                  className="bg-background border border-border rounded-lg p-2 font-mono"
+                  disabled={isLocked}
+                >
+                  {Array.from({ length: 25 }, (_, i) => i + 1).map(shift => (
+                    <option key={shift} value={shift}>{shift} letters</option>
+                  ))}
+                </select>
+                <span className="text-sm text-muted-foreground">letters</span>
+              </div>
+            </div>
+
             {/* Decryption Input */}
             <div className="cyber-card p-6">
               <h3 className="font-bold mb-4">Decryption Input:</h3>
