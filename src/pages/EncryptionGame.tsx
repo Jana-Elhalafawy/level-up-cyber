@@ -42,7 +42,7 @@ const levels: Level[] = [
     hints: ["Try shift 3", "H becomes K when shifted forward by 3"],
     timeSeconds: 60,
     basePoints: 10,
-    hintCost: { points: 3, time: 10 },
+    hintCost: { points: 3, time: 100 },
     maxAttempts: 5
   },
   {
@@ -55,7 +55,7 @@ const levels: Level[] = [
     hints: ["Same shift as previous", "Shift back by 3"],
     timeSeconds: 45,
     basePoints: 10,
-    hintCost: { points: 3, time: 10 },
+    hintCost: { points: 3, time: 100 },
     maxAttempts: 5
   },
   {
@@ -68,7 +68,7 @@ const levels: Level[] = [
     hints: ["Try shift 3 again", "Same pattern as before"],
     timeSeconds: 45,
     basePoints: 10,
-    hintCost: { points: 3, time: 10 },
+    hintCost: { points: 3, time: 100 },
     maxAttempts: 5
   },
   {
@@ -81,7 +81,7 @@ const levels: Level[] = [
     hints: ["Try shift 4", "X becomes T when shifted back by 4"],
     timeSeconds: 40,
     basePoints: 10,
-    hintCost: { points: 3, time: 10 },
+    hintCost: { points: 3, time: 100 },
     maxAttempts: 5
   },
   {
@@ -94,7 +94,7 @@ const levels: Level[] = [
     hints: ["Numbers stay the same", "Try shift 6"],
     timeSeconds: 35,
     basePoints: 10,
-    hintCost: { points: 3, time: 10 },
+    hintCost: { points: 3, time: 100 },
     maxAttempts: 5
   },
   {
@@ -107,7 +107,7 @@ const levels: Level[] = [
     hints: ["All one shift pattern", "Try shift 10"],
     timeSeconds: 30,
     basePoints: 10,
-    hintCost: { points: 3, time: 10 },
+    hintCost: { points: 3, time: 200 },
     maxAttempts: 5
   },
   {
@@ -120,7 +120,7 @@ const levels: Level[] = [
     hints: ["Try shift 13", "A becomes N when shifted forward by 13"],
     timeSeconds: 25,
     basePoints: 10,
-    hintCost: { points: 3, time: 10 },
+    hintCost: { points: 3, time: 200 },
     maxAttempts: 5
   },
   {
@@ -133,7 +133,7 @@ const levels: Level[] = [
     hints: ["Preserve case pattern", "Try shift 13 but keep upper/lower case"],
     timeSeconds: 20,
     basePoints: 10,
-    hintCost: { points: 3, time: 10 },
+    hintCost: { points: 3, time: 400 },
     maxAttempts: 5
   },
   {
@@ -146,7 +146,7 @@ const levels: Level[] = [
     hints: ["Try a larger shift", "Shift 19 - letters wrap around"],
     timeSeconds: 15,
     basePoints: 10,
-    hintCost: { points: 3, time: 10 },
+    hintCost: { points: 3, time: 400 },
     maxAttempts: 5
   },
   {
@@ -159,7 +159,7 @@ const levels: Level[] = [
     hints: ["Maximum shift - try 22", "This is the hardest one"],
     timeSeconds: 20,
     basePoints: 10,
-    hintCost: { points: 3, time: 10 },
+    hintCost: { points: 3, time: 500 },
     maxAttempts: 5
   }
 ];
