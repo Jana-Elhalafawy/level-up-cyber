@@ -1,0 +1,3425 @@
+[
+ {
+  "module": "1. Spotting Phishing Links",
+  "questions": [
+    {
+      "question": "Which of the following URLs is most likely a phishing link?",
+      "choices": [
+        "https://www.paypa1.com",
+        "https://www.paypal.com",
+        "https://paypal.com/security",
+        "https://support.paypal.com"
+      ],
+      "answer": "https://www.paypa1.com",
+      "explanation": "Phishers often use similar-looking URLs. 'paypa1.com' uses a number '1' instead of 'l'."
+    },
+    {
+      "question": "What makes this link suspicious? https://login-secure.amazon.billing-support.com",
+      "choices": [
+        "It has too many hyphens",
+        "It tries to look like an Amazon domain but is not",
+        "It uses HTTPS",
+        "It ends in .com"
+      ],
+      "answer": "It tries to look like an Amazon domain but is not",
+      "explanation": "The domain is actually 'billing-support.com', not amazon.com. The rest is subdomain trickery."
+    },
+    {
+      "question": "What is a common trait of phishing links?",
+      "choices": [
+        "They use secure HTTPS",
+        "They mimic trusted brand names in their URLs",
+        "They contain personal greetings",
+        "They never use short links"
+      ],
+      "answer": "They mimic trusted brand names in their URLs",
+      "explanation": "Phishing links often imitate real brands to gain trust."
+    },
+    {
+      "question": "Which short link could be suspicious?",
+      "choices": [
+        "https://bit.ly/securelogin",
+        "https://paypal.com/help",
+        "https://support.google.com",
+        "https://github.com/login"
+      ],
+      "answer": "https://bit.ly/securelogin",
+      "explanation": "Shortened links hide the true destination, which is often used in phishing."
+    },
+    {
+      "question": "Why might this link be suspicious? https://appleid-login.com",
+      "choices": [
+        "It is hosted in a foreign country",
+        "It is not the official Apple domain",
+        "It includes a dash",
+        "It does not use HTTPS"
+      ],
+      "answer": "It is not the official Apple domain",
+      "explanation": "The real domain is 'apple.com', not 'appleid-login.com'."
+    },
+    {
+      "question": "What should you do before clicking a link in an email?",
+      "choices": [
+        "Trust the sender's name",
+        "Click quickly before the deal expires",
+        "Hover over it to preview the URL",
+        "Forward it to friends to confirm"
+      ],
+      "answer": "Hover over it to preview the URL",
+      "explanation": "Always preview where a link goes before clicking."
+    },
+    {
+      "question": "Which domain is suspicious?",
+      "choices": [
+        "https://secure-update-google.com",
+        "https://google.com/settings",
+        "https://accounts.google.com",
+        "https://google.com/2-step-verification"
+      ],
+      "answer": "https://secure-update-google.com",
+      "explanation": "This is not a Google-owned domain. It's a fake with similar wording."
+    },
+    {
+      "question": "A legitimate domain of Microsoft would be:",
+      "choices": [
+        "https://login.microsoftonline.com",
+        "https://microsoft-login-support.com",
+        "https://support.microsoftlogin.org",
+        "https://mssecurelogin.co"
+      ],
+      "answer": "https://login.microsoftonline.com",
+      "explanation": "Microsoft uses microsoftonline.com for login services."
+    },
+    {
+      "question": "Which clue often reveals a phishing site?",
+      "choices": [
+        "An expired SSL certificate",
+        "Brand logos",
+        "Password fields",
+        "Attractive design"
+      ],
+      "answer": "An expired SSL certificate",
+      "explanation": "Real sites rarely have expired certificates; phishing sites often do."
+    },
+    {
+      "question": "How can attackers trick users with subdomains?",
+      "choices": [
+        "By using emojis",
+        "By using real brand names in subdomains",
+        "By adding security badges",
+        "By copying email formats"
+      ],
+      "answer": "By using real brand names in subdomains",
+      "explanation": "Attackers may use URLs like 'paypal.fake-site.com' to trick users."
+    },
+    {
+      "question": "A URL ends in '.ru'. What might this indicate?",
+      "choices": [
+        "It's a real Russian site",
+        "It's a phishing site hosted in Russia",
+        "Nothing; domain endings are irrelevant",
+        "It's safer than .com domains"
+      ],
+      "answer": "It's a phishing site hosted in Russia",
+      "explanation": "While not always dangerous, unusual TLDs can indicate malicious intent."
+    },
+    {
+      "question": "What is wrong with this link? http://secure-bank-login.net",
+      "choices": [
+        "It is using HTTP instead of HTTPS",
+        "It is too long",
+        "It has a hyphen",
+        "It is a real banking domain"
+      ],
+      "answer": "It is using HTTP instead of HTTPS",
+      "explanation": "Sensitive sites should always use HTTPS. HTTP sites are insecure."
+    }
+  ]
+},
+ {
+  "module": "2. QR Code Phishing Detection",
+  "questions": [
+    {
+      "question": "What is a QR code?",
+      "choices": [
+        "A barcode used in groceries only",
+        "A type of 2D barcode that stores data like URLs",
+        "A digital payment method",
+        "A mobile app"
+      ],
+      "answer": "A type of 2D barcode that stores data like URLs",
+      "explanation": "QR codes are 2D barcodes that can store links, text, or commands, making them useful but also risky."
+    },
+    {
+      "question": "How can QR codes be dangerous?",
+      "choices": [
+        "They can only lead to safe websites",
+        "They can track your steps",
+        "They can redirect to phishing or malware sites",
+        "They cause phones to crash"
+      ],
+      "answer": "They can redirect to phishing or malware sites",
+      "explanation": "Malicious QR codes can redirect users to phishing sites or trigger malware downloads."
+    },
+    {
+      "question": "You scan a QR code and it asks for login credentials. What should you do?",
+      "choices": [
+        "Enter your credentials quickly",
+        "Check if the site is legitimate",
+        "Ignore and turn off Wi-Fi",
+        "Change your SIM card"
+      ],
+      "answer": "Check if the site is legitimate",
+      "explanation": "Always verify the URL and source before entering any personal information."
+    },
+    {
+      "question": "How can you protect yourself from malicious QR codes?",
+      "choices": [
+        "Scan every QR code you find",
+        "Use a QR scanner that previews the URL",
+        "Ignore QR codes altogether",
+        "Print them yourself"
+      ],
+      "answer": "Use a QR scanner that previews the URL",
+      "explanation": "A secure QR scanner shows the URL before opening it, allowing you to detect suspicious links."
+    },
+    {
+      "question": "Which of these is a suspicious QR code scenario?",
+      "choices": [
+        "Printed on official company brochures",
+        "Shared via personal WhatsApp messages from unknown numbers",
+        "Posted in your company's internal portal",
+        "On a product label"
+      ],
+      "answer": "Shared via personal WhatsApp messages from unknown numbers",
+      "explanation": "Random QR codes shared over messaging apps are often phishing attempts."
+    },
+    {
+      "question": "What should you check before scanning a QR code in public?",
+      "choices": [
+        "Its size",
+        "If it is on top of a sticker or label",
+        "Its shape",
+        "If others are scanning it"
+      ],
+      "answer": "If it is on top of a sticker or label",
+      "explanation": "Cybercriminals may place fake QR code stickers over legitimate ones to trick users."
+    },
+    {
+      "question": "Why is it risky to scan QR codes found in parking lots or flyers?",
+      "choices": [
+        "They have bad print quality",
+        "They might lead to unsafe websites or fake payment pages",
+        "They are unreadable by phones",
+        "They are too small"
+      ],
+      "answer": "They might lead to unsafe websites or fake payment pages",
+      "explanation": "Attackers often place fake codes in public places to lure users into scams or malware traps."
+    },
+    {
+      "question": "What action can a QR code trigger besides opening a URL?",
+      "choices": [
+        "Charge your phone",
+        "Launch a mobile game",
+        "Send a text message or email",
+        "Create a new SIM card"
+      ],
+      "answer": "Send a text message or email",
+      "explanation": "Some QR codes can initiate actions like texts or emails, which may have malicious intent."
+    },
+    {
+      "question": "What is a sign that a QR code might be fake?",
+      "choices": [
+        "It is black and white",
+        "It is perfectly square",
+        "It is on top of another QR code",
+        "It was made in Photoshop"
+      ],
+      "answer": "It is on top of another QR code",
+      "explanation": "Criminals often overlay fake QR stickers over real ones to hijack users."
+    },
+    {
+      "question": "If your device opens a strange URL after scanning a QR code, what should you do?",
+      "choices": [
+        "Close it immediately and clear your browser history",
+        "Bookmark it",
+        "Click around to explore it",
+        "Send it to others to check"
+      ],
+      "answer": "Close it immediately and clear your browser history",
+      "explanation": "If you suspect a QR code led to a phishing site, close it quickly and avoid interacting with it."
+    },
+    {
+      "question": "Can QR codes be used in phishing emails?",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "answer": "Yes",
+      "explanation": "Phishing emails may include QR codes to evade email scanners and direct users to fake sites."
+    },
+    {
+      "question": "What should a secure QR scanning app do?",
+      "choices": [
+        "Automatically open links",
+        "Disable all popups",
+        "Preview URLs and warn about risky ones",
+        "Convert the code to an image"
+      ],
+      "answer": "Preview URLs and warn about risky ones",
+      "explanation": "Secure scanners preview the link and help detect suspicious destinations before opening them."
+    }
+  ]
+},
+ {
+  "module": "3. Email Header Analysis",
+  "questions": [
+    {
+      "question": "Which part of an email header shows the actual sending server?",
+      "choices": [
+        "From:",
+        "Return-Path:",
+        "Reply-To:",
+        "Received:"
+      ],
+      "answer": "Received:",
+      "explanation": "The 'Received:' field tracks the actual servers involved in delivering the email."
+    },
+    {
+      "question": "You receive an email from 'admin@yourbank.com' but the 'Return-Path' says 'suspicious@phish.com'. What does this indicate?",
+      "choices": [
+        "Spoofing",
+        "Encryption",
+        "Legitimacy",
+        "Spam filter"
+      ],
+      "answer": "Spoofing",
+      "explanation": "The mismatch suggests the sender's address was forged."
+    },
+    {
+      "question": "Which field indicates who will receive your reply if you hit 'Reply'?",
+      "choices": [
+        "From:",
+        "To:",
+        "Reply-To:",
+        "Delivered-To:"
+      ],
+      "answer": "Reply-To:",
+      "explanation": "Phishers often use a different 'Reply-To' address to receive responses."
+    },
+    {
+      "question": "Which field tells you the final destination of the email in Gmail?",
+      "choices": [
+        "Delivered-To:",
+        "Return-Path:",
+        "To:",
+        "BCC:"
+      ],
+      "answer": "Delivered-To:",
+      "explanation": "'Delivered-To' shows which inbox finally received the email."
+    },
+    {
+      "question": "How can a forged 'From' address be detected?",
+      "choices": [
+        "Checking the body of the email",
+        "Analyzing the domain registration",
+        "Comparing 'From' and 'Received' fields",
+        "Opening the email attachment"
+      ],
+      "answer": "Comparing 'From' and 'Received' fields",
+      "explanation": "The 'Received' header reveals the real origin."
+    },
+    {
+      "question": "What does a DKIM (DomainKeys Identified Mail) signature verify?",
+      "choices": [
+        "If the email is encrypted",
+        "If the email was sent from a mobile device",
+        "If the content was modified",
+        "If the email has a reply address"
+      ],
+      "answer": "If the content was modified",
+      "explanation": "DKIM (DomainKeys Identified Mail) helps verify the integrity and origin of the email's content."
+    },
+    {
+      "question": "What does SPF (Sender Policy Framework) validation check?",
+      "choices": [
+        "That the domain uses TLS",
+        "If the sending IP is allowed by the domain",
+        "That the content is readable",
+        "If images are malicious"
+      ],
+      "answer": "If the sending IP is allowed by the domain",
+      "explanation": "SPF (Sender Policy Framework) prevents unauthorized servers from sending on behalf of a domain."
+    },
+    {
+      "question": "What tool allows you to analyze an email header?",
+      "choices": [
+        "Google Translate",
+        "Header Analyzer",
+        "DNS Checker",
+        "Firewall Monitor"
+      ],
+      "answer": "Header Analyzer",
+      "explanation": "Several online tools like Google's Header Analyzer help you decode email headers."
+    },
+    {
+      "question": "Why might there be multiple 'Received:' fields?",
+      "choices": [
+        "The email passed through multiple servers",
+        "It is a forwarded email",
+        "It is encrypted",
+        "It is a fake email"
+      ],
+      "answer": "The email passed through multiple servers",
+      "explanation": "Each mail server the email touches adds its own 'Received:' header."
+    },
+    {
+      "question": "An email claims it is from support@apple.com, but the SPF check fails. What does this mean?",
+      "choices": [
+        "The email is trusted",
+        "The email might be spoofed",
+        "Apple changed their SPF policy",
+        "The server had an outage"
+      ],
+      "answer": "The email might be spoofed",
+      "explanation": "SPF failure indicates the sender is not authorized to use that domain."
+    },
+    {
+      "question": "What can you infer from an IP address in the header like '123.45.67.89' from a suspicious country?",
+      "choices": [
+        "It is irrelevant",
+        "The email may be from a proxy",
+        "The sender is local",
+        "The email is encrypted"
+      ],
+      "answer": "The email may be from a proxy",
+      "explanation": "Attackers often use foreign or anonymous servers to hide identity."
+    },
+    {
+      "question": "What should raise red flags in an email header?",
+      "choices": [
+        "Multiple trusted 'Received' servers",
+        "Failed SPF or DKIM",
+        "A verified Google server",
+        "Proper timestamp order"
+      ],
+      "answer": "Failed SPF or DKIM",
+      "explanation": "Failure in SPF/DKIM suggests email legitimacy issues."
+    }
+  ]
+},
+ {
+  "module": "4. Malicious Attachments",
+  "questions": [
+    {
+      "question": "Which file extension is MOST likely to contain a malicious macro?",
+      "choices": [
+        ".pdf",
+        ".docm",
+        ".txt",
+        ".jpg"
+      ],
+      "answer": ".docm",
+      "explanation": "Files with .docm extensions can contain macros, which attackers often use to run malicious code."
+    },
+    {
+      "question": "Why should you be cautious of ZIP file attachments from unknown sources?",
+      "choices": [
+        "ZIP files are always password-protected",
+        "ZIP files can contain multiple hidden threats",
+        "ZIP files can't be scanned for viruses",
+        "ZIP files open automatically"
+      ],
+      "answer": "ZIP files can contain multiple hidden threats",
+      "explanation": "Attackers often bundle malicious files inside ZIP archives to evade detection."
+    },
+    {
+      "question": "An attachment asks you to enable 'content' or 'macros'. What should you do?",
+      "choices": [
+        "Enable it immediately",
+        "Check the sender and file type first",
+        "Restart your device",
+        "Forward it to IT without opening"
+      ],
+      "answer": "Check the sender and file type first",
+      "explanation": "Never enable macros without verifying the sender and file type, as they could execute harmful scripts."
+    },
+    {
+      "question": "What is a safe file type for viewing documents?",
+      "choices": [
+        ".exe",
+        ".bat",
+        ".pdf",
+        ".js"
+      ],
+      "answer": ".pdf",
+      "explanation": "PDFs are safer than executable or script files, though not completely immune to exploits."
+    },
+    {
+      "question": "You receive an email with a .exe file attachment. What should you do?",
+      "choices": [
+        "Run it immediately",
+        "Ignore and delete the email",
+        "Open it in incognito mode",
+        "Forward it to friends"
+      ],
+      "answer": "Ignore and delete the email",
+      "explanation": ".exe files can install malware and should never be opened from unknown or suspicious sources."
+    },
+    {
+      "question": "Which email attachment would raise the MOST suspicion?",
+      "choices": [
+        "Invoice.pdf",
+        "Offer.docx",
+        "Salary.exe",
+        "Resume.txt"
+      ],
+      "answer": "Salary.exe",
+      "explanation": "Executable files like .exe are rarely used in professional emails and can install malware."
+    },
+    {
+      "question": "Macros in Word or Excel documents can:",
+      "choices": [
+        "Improve document design",
+        "Be used to automate harmless tasks only",
+        "Be used to execute malicious scripts",
+        "Help reduce file size"
+      ],
+      "answer": "Be used to execute malicious scripts",
+      "explanation": "Macros are often exploited to run malicious code when the user enables them."
+    },
+    {
+      "question": "Which of these is a red flag in an email with an attachment?",
+      "choices": [
+        "Formal greeting",
+        "Unexpected urgency",
+        "Well-written content",
+        "Known contact"
+      ],
+      "answer": "Unexpected urgency",
+      "explanation": "Phishing emails often create urgency to pressure users into opening attachments quickly."
+    },
+    {
+      "question": "What should you do before opening any email attachment?",
+      "choices": [
+        "Click it to see what happens",
+        "Forward it to everyone",
+        "Scan it with antivirus software",
+        "Disable your internet"
+      ],
+      "answer": "Scan it with antivirus software",
+      "explanation": "Always scan attachments using updated antivirus software before opening them."
+    },
+    {
+      "question": "Why do attackers often send attachments disguised as resumes or invoices?",
+      "choices": [
+        "They are always trusted files",
+        "They appear routine and non-threatening",
+        "They are legal documents",
+        "They are encrypted"
+      ],
+      "answer": "They appear routine and non-threatening",
+      "explanation": "Attackers disguise threats as common business files to reduce suspicion."
+    },
+    {
+      "question": "Which of the following files is least likely to be malicious?",
+      "choices": [
+        ".xlsm",
+        ".pdf",
+        ".exe",
+        ".bat"
+      ],
+      "answer": ".pdf",
+      "explanation": "While not perfectly safe, PDFs are less likely to contain malicious code than executables or scripts."
+    },
+    {
+      "question": "If you accidentally open a suspicious attachment, what should you do FIRST?",
+      "choices": [
+        "Restart your computer",
+        "Run a full antivirus scan",
+        "Delete your files",
+        "Turn up your screen brightness"
+      ],
+      "answer": "Run a full antivirus scan",
+      "explanation": "A full antivirus scan may detect and remove malware before it causes harm."
+    }
+  ]
+},
+ {
+  "module": "5. Social Engineering Attacks",
+  "questions": [
+    {
+      "question": "What is social engineering in cybersecurity?",
+      "choices": [
+        "Software updates",
+        "Human manipulation to gain access",
+        "Hardware installation",
+        "Data encryption"
+      ],
+      "answer": "Human manipulation to gain access",
+      "explanation": "Social engineering uses psychological tactics to trick people into giving up confidential information."
+    },
+    {
+      "question": "Which of the following is a social engineering tactic?",
+      "choices": [
+        "Firewall hacking",
+        "Sending a phishing email",
+        "DDoS attack",
+        "Malware injection"
+      ],
+      "answer": "Sending a phishing email",
+      "explanation": "Phishing emails are a common form of social engineering used to manipulate people into clicking harmful links."
+    },
+    {
+      "question": "What is pretexting?",
+      "choices": [
+        "Writing malware scripts",
+        "Encrypting files",
+        "Upgrading software",
+        "Creating a fake scenario to gain trust"
+      ],
+      "answer": "Creating a fake scenario to gain trust",
+      "explanation": "Pretexting involves inventing a story to convince a victim to share private information."
+    },
+    {
+      "question": "Which of these could be a sign of a social engineering attack?",
+      "choices": [
+        "Email with spelling mistakes urging quick action",
+        "A slow Wi-Fi connection",
+        "A strong password",
+        "System reboot"
+      ],
+      "answer": "Email with spelling mistakes urging quick action",
+      "explanation": "Urgency, poor grammar, and fear tactics are common signs of phishing or social engineering attempts."
+    },
+    {
+      "question": "What is baiting?",
+      "choices": [
+        "Creating passwords",
+        "Watching phishing videos",
+        "Using free offers to lure victims",
+        "Encrypting hard drives"
+      ],
+      "answer": "Using free offers to lure victims",
+      "explanation": "Baiting offers something enticing (like free music or a gift card) to trick people into downloading malware."
+    },
+    {
+      "question": "Which device could be used in a physical social engineering attack?",
+      "choices": [
+        "Flash drive with malware",
+        "Firewall",
+        "Keyboard",
+        "Smartphone charger"
+      ],
+      "answer": "Flash drive with malware",
+      "explanation": "Attackers may leave infected USBs in public places to trick people into plugging them into their computers."
+    },
+    {
+      "question": "What is tailgating in security terms?",
+      "choices": [
+        "Driving too close",
+        "Following someone into a secure area without permission",
+        "Watching a YouTube tutorial",
+        "Resetting passwords"
+      ],
+      "answer": "Following someone into a secure area without permission",
+      "explanation": "Tailgating is when someone follows an authorized person into a restricted area without authorization."
+    },
+    {
+      "question": "How can organizations protect against social engineering?",
+      "choices": [
+        "Use stronger encryption",
+        "Train employees to recognize suspicious behavior",
+        "Upgrade software",
+        "Buy new routers"
+      ],
+      "answer": "Train employees to recognize suspicious behavior",
+      "explanation": "Awareness and training are the best defenses against social engineering."
+    },
+    {
+      "question": "Which emotion is commonly exploited in social engineering?",
+      "choices": [
+        "Boredom",
+        "Curiosity",
+        "Trust and fear",
+        "Confidence"
+      ],
+      "answer": "Trust and fear",
+      "explanation": "Attackers often use fear (e.g. threats,...) or trust (e.g. pretending to be your boss,...) to manipulate people."
+    },
+    {
+      "question": "What should you do if someone on the phone asks for your password?",
+      "choices": [
+        "Refuse and report the call",
+        "Give them a fake one",
+        "Tell them only if they sound official",
+        "Ask for their number"
+      ],
+      "answer": "Refuse and report the call",
+      "explanation": "Never share passwords. Report the incident to your IT/security team."
+    },
+    {
+      "question": "A caller claims they are from tech support and need access to your PC. What is the best action?",
+      "choices": [
+        "Give remote access",
+        "Follow their instructions",
+        "Ask for their name and write it down",
+        "Hang up and verify through official channels"
+      ],
+      "answer": "Hang up and verify through official channels",
+      "explanation": "Always verify any request for access independently, this is a common support scam."
+    },
+    {
+      "question": "Social engineering attacks often succeed because of:",
+      "choices": [
+        "Strong firewalls",
+        "Lack of user awareness",
+        "Complex encryption",
+        "Fast internet"
+      ],
+      "answer": "Lack of user awareness",
+      "explanation": "Secure scanners preview the link and help detect suspicious destinations before opening them."
+    }
+  ]
+},
+ {
+  "module": "6. Password Security and Credential Management",
+  "questions": [
+    {
+      "question": "Which of these is the strongest password?",
+      "choices": [
+        "password123",
+        "John1990",
+        "!F9p$7@Lqx#^Bz",
+        "MyCatNameIsFluffy"
+      ],
+      "answer": "!F9p$7@Lqx#^Bz",
+      "explanation": "A strong password is long, random, and uses a mix of letters, numbers, and symbols."
+    },
+    {
+      "question": "You are creating a password. What is the most dangerous thing to include?",
+      "choices": [
+        "A random phrase",
+        "Your birthday",
+        "Numbers and symbols",
+        "A password manager suggestion"
+      ],
+      "answer": "Your birthday",
+      "explanation": "Personal information like birthdays is easily guessed or found online."
+    },
+    {
+      "question": "You find a sticky note with your password. Best next move?",
+      "choices": [
+        "Take a picture and keep it",
+        "Leave it there",
+        "Shred it and change the password immediately",
+        "Share it with your friend"
+      ],
+      "answer": "Shred it and change the password immediately",
+      "explanation": "Writing down passwords is risky; always store them securely using a password manager."
+    },
+    {
+      "question": "Why is reusing passwords across sites dangerous?",
+      "choices": [
+        "It helps you remember them",
+        "Sites share your password",
+        "If one site is hacked, all accounts are at risk",
+        "It is totally safe"
+      ],
+      "answer": "If one site is hacked, all accounts are at risk",
+      "explanation": "A data breach on one site could give hackers access to many of your other accounts."
+    },
+    {
+      "question": "What is credential stuffing?",
+      "choices": [
+        "Making your password extra long",
+        "A type of holiday turkey",
+        "Using stolen login details across multiple sites",
+        "Filling out forms quickly"
+      ],
+      "answer": "Using stolen login details across multiple sites",
+      "explanation": "Credential stuffing uses leaked passwords to try logging into many sites automatically."
+    },
+    {
+      "question": "Which of these passwords is safest?",
+      "choices": [
+        "iloveyou",
+        "P@55w0rd",
+        "dragon",
+        "&Dk!7Rvb^3Pz"
+      ],
+      "answer": "&Dk!7Rvb^3Pz",
+      "explanation": "The others are common or easy to guess. The correct answer is complex and random."
+    },
+    {
+      "question": "What's the role of a password manager?",
+      "choices": [
+        "To annoy you with popups",
+        "To store, create, and autofill complex passwords",
+        "To check your email",
+        "To replace your operating system"
+      ],
+      "answer": "To store, create, and autofill complex passwords",
+      "explanation": "Password managers safely store all your credentials behind one master password."
+    },
+    {
+      "question": "You receive an email saying, “Your account is compromised! Click here to reset your password.” What should you do?",
+      "choices": [
+        "Click immediately",
+        "Forward it to friends",
+        "Ignore it forever",
+        "Log in directly through the website, not the link"
+      ],
+      "answer": "Log in directly through the website, not the link",
+      "explanation": "This could be a phishing scam. Always go directly to the website to verify."
+    },
+    {
+      "question": "How often should you change your password?",
+      "choices": [
+        "Never",
+        "Every 24 hours",
+        "When there is a data breach or suspicion",
+        "Every time you sneeze"
+      ],
+      "answer": "When there is a data breach or suspicion",
+      "explanation": "You do not need to change passwords often — only when necessary or after a breach."
+    },
+    {
+      "question": "What is a passphrase?",
+      "choices": [
+        "A spell from Harry Potter",
+        "A series of unrelated words forming a secure password",
+        "A string of emojis",
+        "A fake phrase for hacking"
+      ],
+      "answer": "A series of unrelated words forming a secure password",
+      "explanation": "A passphrase like 'YellowBoatMonkey$7Dance' is long, memorable, and secure."
+    },
+    {
+      "question": "Which of these is not good password hygiene?",
+      "choices": [
+        "Using MFA",
+        "Reusing passwords",
+        "Enabling alerts",
+        "Using a password manager"
+      ],
+      "answer": "Reusing passwords",
+      "explanation": "Reusing passwords is dangerous; due to the fact that if one is breached, all are vulnerable."
+    },
+    {
+      "question": "If your friend asks for your Netflix password, what is the best answer (security-wise)?",
+      "choices": [
+        "“Sure!”",
+        "“Only if you never share it.”",
+        "“Use a guest profile”",
+        "“Nope, I do not share passwords. Let’s watch together.”"
+      ],
+      "answer": "“Nope, I do not share passwords. Let’s watch together.”",
+      "explanation": "Even trusted people shouldnot have your credentials, especially when stored in insecure places."
+    }
+  ]
+},
+ {
+  "module": "7. Multi-Factor Authentication (MFA) Deep Dive",
+  "questions": [
+    {
+      "question": "What does MFA (Multi-Factor Authentication) mean?",
+      "choices": [
+        "Logging in with multiple usernames",
+        "Using two or more types of identity verification methods",
+        "Having more than one password",
+        "Copy-pasting your password twice"
+      ],
+      "answer": "Using two or more types of identity verification methods",
+      "explanation": "MFA requires multiple forms of verification, usually a combination of something you know (like a password), something you have (like a phone or token), or something you are (like a fingerprint)."
+    },
+    {
+      "question": "Which of these is not an example of a second factor in MFA?",
+      "choices": [
+        "SMS code",
+        "Password",
+        "Fingerprint scan",
+        "Authentication app code"
+      ],
+      "answer": "Password",
+      "explanation": "Passwords are the first factor (something you know). MFA requires a second factor that is independent."
+    },
+    {
+      "question": "What is the safest MFA method?",
+      "choices": [
+        "SMS code",
+        "Email confirmation",
+        "Authenticator app (e.g. Google Authenticator, Microsoft Authenticator)",
+        "None as all are the same"
+      ],
+      "answer": "Authenticator app (e.g. Google Authenticator, Microsoft Authenticator)",
+      "explanation": "Authenticator apps generate time-based one-time passwords (TOTP) locally on your phone, they are safer than SMS or email, which can be intercepted."
+    },
+    {
+      "question": "Which of these situations would MFA likely protect you from?",
+      "choices": [
+        "Forgetting your password",
+        "Phishing attacks that steal passwords",
+        "Battery draining too fast",
+        "Slower Wi-Fi speeds"
+      ],
+      "answer": "Phishing attacks that steal passwords",
+      "explanation": "Even if your password is stolen, an attacker would also need the second factor; making phishing attacks much less effective."
+    },
+    {
+      "question": "You receive a 2FA code without trying to log in. What should you do?",
+      "choices": [
+        "Ignore it",
+        "Use it anyway",
+        "Change your password immediately",
+        "Send it to your friend"
+      ],
+      "answer": "Change your password immediately",
+      "explanation": "This could mean someone is trying to access your account. Changing your password immediately is safest."
+    },
+    {
+      "question": "What is “push-based authentication”?",
+      "choices": [
+        "Pushing the login button really hard",
+        "A system that sends a login request to your phone for approval",
+        "Entering your password twice",
+        "Pushing a USB key into your laptop"
+      ],
+      "answer": "A system that sends a login request to your phone for approval",
+      "explanation": "Push-based MFA (used by apps like Duo or Microsoft Authenticator) sends a notification to your phone asking “Was this you?”, click yes or no."
+    },
+    {
+      "question": "Which of these is a biometric factor in MFA?",
+      "choices": [
+        "Email address",
+        "OTP (one-time password)",
+        "Facial recognition",
+        "Backup codes"
+      ],
+      "answer": "Facial recognition",
+      "explanation": "Biometrics refer to something you are (like face ID, fingerprint, voice recognition, etc...)"
+    },
+    {
+      "question": "What is a security key in MFA?",
+      "choices": [
+        "A password hint",
+        "A physical USB device that acts as a second factor",
+        "A key you write down",
+        "An app password"
+      ],
+      "answer": "A physical USB device that acts as a second factor",
+      "explanation": "Devices like YubiKey and Google Titan Security Key are physical tools that you plug into your computer or phone to verify your identity."
+    },
+    {
+      "question": "Why is SMS-based MFA considered weaker than app-based MFA?",
+      "choices": [
+        "Because it is older",
+        "Because it is less popular",
+        "Because SMS messages can be intercepted or SIM-swapped",
+        "Because it does not use Wi-Fi"
+      ],
+      "answer": "Because SMS messages can be intercepted or SIM-swapped",
+      "explanation": "Attackers can use SIM-swapping or intercept messages to steal your SMS codes. Authenticator apps are safer."
+    },
+    {
+      "question": "What is a recovery code in MFA?",
+      "choices": [
+        "A cheat code",
+        "A secret backup code you save in case you lose access to your device",
+        "Your old password",
+        "A code you use daily"
+      ],
+      "answer": "A secret backup code you save in case you lose access to your device",
+      "explanation": "Most MFA systems provide backup/recovery codes when you first set them up. Store these securely!"
+    },
+    {
+      "question": "You lose your phone and cannot access your Authenticator app. What should you do?",
+      "choices": [
+        "Panic and throw your laptop",
+        "Use a recovery code or backup method",
+        "Try random codes",
+        "Borrow a friend’s app"
+      ],
+      "answer": "Use a recovery code or backup method",
+      "explanation": "Always save recovery codes in a secure place (e.g. password manager). They help you recover access without your second factor."
+    },
+    {
+      "question": "What is the biggest myth about MFA?",
+      "choices": [
+        "It is annoying",
+        "It takes too long",
+        "It only works for banks",
+        "It is the first and best way to secure your accounts"
+      ],
+      "answer": "It only works for banks",
+      "explanation": "MFA is widely supported across services (email, social media, cloud storage, banking, and more). It is not limited to financial apps."
+    }
+  ]
+},
+ {
+  "module": "8. Secure Software and Device Updates",
+  "questions": [
+    {
+      "question": "What is the most important reason to update your device regularly?",
+      "choices": [
+        "It makes your phone look cooler",
+        "Updates fix bugs and add new emojis",
+        "Updates often patch security vulnerabilities that hackers could exploit",
+        "It makes your phone faster"
+      ],
+      "answer": "Updates often patch security vulnerabilities that hackers could exploit",
+      "explanation": "Updates close known security holes. Ignoring them leaves your system exposed to malware and attacks."
+    },
+    {
+      "question": "What does \"OS update\" mean?",
+      "choices": [
+        "Open Source settings",
+        "Office Suite install",
+        "Operating System update — like iOS or Android",
+        "Online Sync"
+      ],
+      "answer": "Operating System update — like iOS or Android",
+      "explanation": "The OS (Operating System) is the software that runs your device. Keeping it updated is critical for security."
+    },
+    {
+      "question": "You see a pop-up saying: \"Click here to install APK for WhatsApp Gold!\" What should you do?",
+      "choices": [
+        "Install it — it sounds like an upgrade!",
+        "Google it first",
+        "Avoid it — it is likely malware",
+        "Share it with your friends"
+      ],
+      "answer": "Avoid it — it is likely malware",
+      "explanation": "APK (Android Package Kit) files from unofficial sources can contain malicious code. Never install random APKs."
+    },
+    {
+      "question": "What is the safest way to install app updates?",
+      "choices": [
+        "From social media links",
+        "From official app stores like Google Play or Apple App Store",
+        "From a friend’s USB",
+        "By searching on random websites"
+      ],
+      "answer": "From official app stores like Google Play or Apple App Store",
+      "explanation": "Official app stores scan apps for malware and offer secure updates. Third-party sources are risky."
+    },
+    {
+      "question": "Why do hackers love outdated software?",
+      "choices": [
+        "It is ugly",
+        "It runs slowly",
+        "It is full of known weaknesses that they can exploit easily",
+        "Because it's popular"
+      ],
+      "answer": "It is full of known weaknesses that they can exploit easily",
+      "explanation": "Outdated apps and systems often have vulnerabilities that are already documented online."
+    },
+    {
+      "question": "What is “automatic updates” and why enable it?",
+      "choices": [
+        "It is a battery saver",
+        "It auto-cleans your phone",
+        "It installs updates in the background so you are always protected",
+        "It resets your settings"
+      ],
+      "answer": "It installs updates in the background so you are always protected",
+      "explanation": "Enabling automatic updates means your apps and system stay current without you having to remember."
+    },
+    {
+      "question": "If your friend says “Do not update, it slows things down!”, how should you respond?",
+      "choices": [
+        "“You are right, I will never update again.”",
+        "“True, let’s downgrade.”",
+        "“Security is more important. Updates protect us from cyber threats.”",
+        "“Let’s jailbreak our phones.”"
+      ],
+      "answer": "“Security is more important. Updates protect us from cyber threats.”",
+      "explanation": "While some updates may affect performance, most improve security. Always prioritize safety."
+    },
+    {
+      "question": "What is “firmware”?",
+      "choices": [
+        "A new kind of malware",
+        "Software that is permanently installed on hardware",
+        "A free app",
+        "Your Instagram filter pack"
+      ],
+      "answer": "Software that is permanently installed on hardware",
+      "explanation": "Firmware is the low-level software embedded in devices (like routers and cameras). Updating it helps fix hardware-level vulnerabilities."
+    },
+    {
+      "question": "Why should you avoid “cracked” or modified software?",
+      "choices": [
+        "It might not work",
+        "It could install hidden backdoors or keyloggers",
+        "It is often illegal",
+        "All of the above"
+      ],
+      "answer": "All of the above",
+      "explanation": "Cracked software is a massive risk. It bypasses security checks and often contains malicious code."
+    },
+    {
+      "question": "You forgot to update your antivirus software. What could go wrong?",
+      "choices": [
+        "Nothing. Antivirus is always perfect",
+        "The antivirus may miss new threats and viruses",
+        "Your phone might explode",
+        "Your computer becomes faster"
+      ],
+      "answer": "The antivirus may miss new threats and viruses",
+      "explanation": "Antivirus software needs regular updates to detect the latest malware. An outdated antivirus is nearly useless."
+    },
+    {
+      "question": "What is “zero-day” vulnerability?",
+      "choices": [
+        "A vulnerability that lasts for one day only",
+        "A brand of hacking tool",
+        "A security flaw that is discovered before developers can patch it",
+        "A backup file"
+      ],
+      "answer": "A security flaw that is discovered before developers can patch it",
+      "explanation": "Zero-day means the flaw is newly discovered, and no fix exists yet. Hackers rush to exploit it before it is patched."
+    },
+    {
+      "question": "You are using version 1.0 of a popular app. Version 2.0 includes security improvements. What should you do?",
+      "choices": [
+        "Stick with 1.0 forever",
+        "Wait and see what others do",
+        "Update immediately to stay secure",
+        "Only update if you are bored"
+      ],
+      "answer": "Update immediately to stay secure",
+      "explanation": "Security improvements are crucial. Always upgrade to the latest secure version of any app or system."
+    }
+  ]
+},
+ {
+  "module": "9. Public Wi-Fi and Man-in-the-Middle (MITM) Attacks",
+  "questions": [
+    {
+      "question": "You are at a cafe and see “Free_Wifi_CoffeeShop” and “CoffeeShop_FreeWifi”. Which is safest?",
+      "choices": [
+        "The one with more bars",
+        "Either as they are probably both fine",
+        "Ask the cafe staff for the correct name before connecting",
+        "Just try both"
+      ],
+      "answer": "Ask the cafe staff for the correct name before connecting",
+      "explanation": "Attackers often create fake Wi-Fi hotspots with similar names to trick users into connecting."
+    },
+    {
+      "question": "What is a Man-in-the-Middle (MITM) attack?",
+      "choices": [
+        "A hacker standing between two routers",
+        "A person interrupting your conversation",
+        "A hacker secretly intercepting data between you and a website",
+        "Two people sharing a keyboard"
+      ],
+      "answer": "A hacker secretly intercepting data between you and a website",
+      "explanation": "In MITM attacks, a hacker “sits between” your device and the internet, intercepting or altering data."
+    },
+    {
+      "question": "You are connected to public Wi-Fi. What is the safest action?",
+      "choices": [
+        "Log into your bank account",
+        "Stream videos",
+        "Shop online",
+        "Check social media"
+      ],
+      "answer": "Stream videos",
+      "explanation": "Avoid logging into sensitive accounts on public Wi-Fi. Streaming does not require personal data."
+    },
+    {
+      "question": "What is a Wi-Fi Pineapple?",
+      "choices": [
+        "A fruity-looking router",
+        "A type of MITM exploit device",
+        "A special VPN protocol",
+        "A guest Wi-Fi name"
+      ],
+      "answer": "A type of MITM exploit device",
+      "explanation": "A Wi-Fi Pineapple is a device hackers use to mimic real networks and perform MITM attacks."
+    },
+    {
+      "question": "What does HTTPS help protect you from?",
+      "choices": [
+        "Hackers wearing hoodies",
+        "MITM attacks",
+        "Slow internet",
+        "Pop-up ads"
+      ],
+      "answer": "MITM attacks",
+      "explanation": "HTTPS encrypts data between your browser and the server, making it harder for MITM attackers to read."
+    },
+    {
+      "question": "Which of these is a major red flag on public Wi-Fi?",
+      "choices": [
+        "You are asked to install a certificate before browsing",
+        "You're asked to agree to terms and conditions",
+        "The speed is slow",
+        "There is a lot of noise around you"
+      ],
+      "answer": "You are asked to install a certificate before browsing",
+      "explanation": "Fake certificates are used to intercept encrypted data. Never install certificates from unknown sources."
+    },
+    {
+      "question": "Why is using a VPN helpful on public Wi-Fi?",
+      "choices": [
+        "It gives you free movies",
+        "It makes your connection invisible to the router",
+        "It encrypts all your traffic and hides it from attackers",
+        "It blocks pop-ups"
+      ],
+      "answer": "It encrypts all your traffic and hides it from attackers",
+      "explanation": "A VPN creates a secure “tunnel” for your data, even on risky networks like public Wi-Fi."
+    },
+    {
+      "question": "What could happen if you log in to your email on an unsecured network?",
+      "choices": [
+        "You get spammed with cat videos",
+        "Your password and messages can be intercepted",
+        "Nothing, email is not that important",
+        "You get logged out"
+      ],
+      "answer": "Your password and messages can be intercepted",
+      "explanation": "Without encryption, attackers can steal login credentials and private messages in transit."
+    },
+    {
+      "question": "Which of these actions is NOT recommended on public Wi-Fi?",
+      "choices": [
+        "Updating your system",
+        "Watching YouTube",
+        "Sending business emails",
+        "Using a VPN"
+      ],
+      "answer": "Sending business emails",
+      "explanation": "Anything involving sensitive data or company access should be avoided on public networks."
+    },
+    {
+      "question": "You notice a login page pop up immediately after connecting to Wi-Fi. What should you check first?",
+      "choices": [
+        "If it looks cool",
+        "If the logo is animated",
+        "If the site is HTTPS-secured",
+        "If you can skip it"
+      ],
+      "answer": "If the site is HTTPS-secured",
+      "explanation": "Fake captive portals may mimic real login pages. Always check for HTTPS and URL legitimacy."
+    },
+    {
+      "question": "You are prompted to enter your Facebook password to get Wi-Fi access. What should you do?",
+      "choices": [
+        "Enter it quickly",
+        "Share your account",
+        "Immediately disconnect as this is suspicious",
+        "Try another hotspot"
+      ],
+      "answer": "Immediately disconnect — this is suspicious",
+      "explanation": "Public Wi-Fi should never ask for personal passwords to unrelated services, it is likely phishing."
+    },
+    {
+      "question": "What is the best long-term habit for public Wi-Fi use?",
+      "choices": [
+        "Always bring your own router",
+        "Use a VPN, avoid sensitive logins, and disable auto-connect",
+        "Never use Wi-Fi again",
+        "Just trust it, it is free"
+      ],
+      "answer": "Use a VPN, avoid sensitive logins, and disable auto-connect",
+      "explanation": "Smart habits like using a VPN, not logging into banks/emails, and disabling auto-connect protect you from common threats."
+    }
+  ]
+},
+ {
+  "module": "10. Malware (Types, Tactics, and Infections)",
+  "questions": [
+    {
+      "question": "Which of the following best defines \"malware\"?",
+      "choices": [
+        "A harmless tracking cookie",
+        "A computer bug that causes funny glitches",
+        "Any software intentionally designed to cause damage or unauthorized access",
+        "Antivirus software gone wrong"
+      ],
+      "answer": "Any software intentionally designed to cause damage or unauthorized access",
+      "explanation": "Malware = “malicious software.” It includes viruses, worms, trojans, ransomware, etc..., all built to harm or exploit systems."
+    },
+    {
+      "question": "A virus is most accurately described as:",
+      "choices": [
+        "A browser hijacker",
+        "A piece of code that attaches itself to other programs and spreads when those are run",
+        "A harmful email",
+        "A stand-alone program that replicates across networks"
+      ],
+      "answer": "A piece of code that attaches itself to other programs and spreads when those are run",
+      "explanation": "A virus cannot spread on its own as it needs a host program to infect and runs when that program is executed."
+    },
+    {
+      "question": "Which malware spreads independently through networks without user action?",
+      "choices": [
+        "Worm",
+        "Spyware",
+        "Virus",
+        "Trojan"
+      ],
+      "answer": "Worm",
+      "explanation": "Worms are self-replicating and can spread autonomously, often causing network overload and rapid infections."
+    },
+    {
+      "question": "You download a free game, but it secretly installs a backdoor on your device. What type of malware is this?",
+      "choices": [
+        "Rootkit",
+        "Trojan Horse",
+        "Worm",
+        "Logic bomb"
+      ],
+      "answer": "Trojan Horse",
+      "explanation": "A Trojan Horse pretends to be useful software but carries hidden malware inside."
+    },
+    {
+      "question": "What is the main goal of ransomware?",
+      "choices": [
+        "Encrypt files and demand payment to unlock them",
+        "Show pop-up ads",
+        "Increase computer performance",
+        "Record keystrokes silently"
+      ],
+      "answer": "Encrypt files and demand payment to unlock them",
+      "explanation": "Ransomware locks users out of their own data and demands money (usually in crypto) for the decryption key."
+    },
+    {
+      "question": "A user clicks a link, and a hidden program silently installs itself and monitors everything they type. What is this?",
+      "choices": [
+        "Keylogger",
+        "Adware",
+        "Ransomware",
+        "Worm"
+      ],
+      "answer": "Keylogger",
+      "explanation": "Keyloggers record keystrokes to steal sensitive info like passwords, credit cards, etc."
+    },
+    {
+      "question": "What does a rootkit do?",
+      "choices": [
+        "Helps scan your PC for malware",
+        "Hides malicious activity by gaining privileged access",
+        "Boosts system speed",
+        "Crashes apps randomly"
+      ],
+      "answer": "Hides malicious activity by gaining privileged access",
+      "explanation": "Rootkits are stealthy malware designed to hide their presence by gaining root/admin-level access."
+    },
+    {
+      "question": "A \"logic bomb\" is best described as:",
+      "choices": [
+        "Spyware that runs continuously",
+        "A prank app",
+        "Antivirus software",
+        "Code that activates when specific conditions are met (e.g. a date or action)"
+      ],
+      "answer": "Code that activates when specific conditions are met (e.g. a date or action)",
+      "explanation": "Logic bombs stay hidden until a trigger is met (like opening a specific file), then execute a harmful payload."
+    },
+    {
+      "question": "What is a \"polymorphic virus\"?",
+      "choices": [
+        "A virus with multiple limbs",
+        "A virus that changes its code to avoid detection",
+        "A virus that only attacks Linux",
+        "A virus that crashes after use"
+      ],
+      "answer": "A virus that changes its code to avoid detection",
+      "explanation": "Polymorphic viruses modify their code each time they replicate, making them hard for antivirus tools to detect."
+    },
+    {
+      "question": "A user receives a fake system update pop-up. Clicking it installs spyware. What technique was used?",
+      "choices": [
+        "Hash collision",
+        "Social engineering",
+        "Brute force",
+        "SQL injection"
+      ],
+      "answer": "Social engineering",
+      "explanation": "Social engineering manipulates people into taking actions that lead to malware infections — here, via fake updates."
+    },
+    {
+      "question": "What is the difference between spyware and adware?",
+      "choices": [
+        "Spyware only targets Android",
+        "They are the same",
+        "Spyware shows ads; adware steals data",
+        "Spyware secretly monitors; adware floods you with ads"
+      ],
+      "answer": "Spyware secretly monitors; adware floods you with ads",
+      "explanation": "Spyware tracks your activity secretly. Adware pushes constant pop-ups and ads, sometimes with tracking."
+    },
+    {
+      "question": "What is the best way to avoid malware infection?",
+      "choices": [
+        "Download only from trusted sources, keep software updated, and use real-time antivirus",
+        "Always click \"Allow\" quickly",
+        "Only use dark mode",
+        "Never shut down your computer"
+      ],
+      "answer": "Download only from trusted sources, keep software updated, and use real-time antivirus",
+      "explanation": "Prevention is key. Good hygiene (updates, secure downloads, and antivirus) significantly reduces malware risk."
+    }
+  ]
+},
+ {
+  "module": "11. Ransomware Attacks (How to Detect, Avoid, and Survive)",
+  "questions": [
+    {
+      "question": "What is ransomware?",
+      "choices": [
+        "A type of malware that encrypts files and demands payment",
+        "A firewall tool",
+        "A scam email asking for money",
+        "A virus that crashes your phone"
+      ],
+      "answer": "A type of malware that encrypts files and demands payment",
+      "explanation": "Ransomware encrypts your data and demands payment, often in crypto. It is one of the most dangerous malware types today."
+    },
+    {
+      "question": "What is typically the attacker’s demand in a ransomware attack?",
+      "choices": [
+        "Your password",
+        "Social media followers",
+        "Personal photos",
+        "A ransom payment, often in Bitcoin or other cryptocurrency"
+      ],
+      "answer": "A ransom payment, often in Bitcoin or other cryptocurrency",
+      "explanation": "Ransomware attacks usually request untraceable crypto payments like Bitcoin to unlock your files."
+    },
+    {
+      "question": "How does ransomware usually enter a system?",
+      "choices": [
+        "Through Facebook comments",
+        "Via fake software updates, phishing emails, or infected attachments",
+        "Through video buffering",
+        "Through YouTube ads"
+      ],
+      "answer": "Via fake software updates, phishing emails, or infected attachments",
+      "explanation": "Ransomware often spreads through deceptive emails or fake downloads that appear legitimate."
+    },
+    {
+      "question": "You receive an email from “Microsoft Support” asking you to open a zip file. What should you do?",
+      "choices": [
+        "Verify the sender via official website and report it if suspicious",
+        "Open it immediately, it looks important",
+        "Forward it to friends to check",
+        "Scan it with antivirus first and then open"
+      ],
+      "answer": "Verify the sender via official website and report it if suspicious",
+      "explanation": "Official companies do not send unsolicited zip files. Always verify sender identity and do not trust attachments blindly."
+    },
+    {
+      "question": "What is “double extortion” in ransomware attacks?",
+      "choices": [
+        "Asking for two ransoms",
+        "Stealing data and threatening to leak it publicly if payment is not made",
+        "Encrypting files twice",
+        "Two hackers working together"
+      ],
+      "answer": "Stealing data and threatening to leak it publicly if payment is not made",
+      "explanation": "In addition to locking data, attackers steal it and threaten public exposure, raising the pressure on victims."
+    },
+    {
+      "question": "You see a strange “.locked” file extension on all your files. What might have happened?",
+      "choices": [
+        "Your files are encrypted by ransomware",
+        "You accidentally renamed them",
+        "Your system auto-renamed them during an update",
+        "Your files are being backed up"
+      ],
+      "answer": "Your files are encrypted by ransomware",
+      "explanation": "Ransomware changes file extensions as a sign of encryption, often to .locked, .crypto, etc."
+    },
+    {
+      "question": "If you are hit with ransomware, should you pay the ransom?",
+      "choices": [
+        "Yes, always",
+        "No, there is no guarantee you'll get your data back",
+        "Only if it is under $100",
+        "Only if the files are important"
+      ],
+      "answer": "No, there is no guarantee you'll get your data back",
+      "explanation": "Law enforcement discourages payment. It funds criminal activity, and you might never get your files back."
+    },
+    {
+      "question": "What is the best defense against ransomware?",
+      "choices": [
+        "Closing your computer at night",
+        "Having antivirus only",
+        "Regular offline backups and security awareness",
+        "Using VPNs"
+      ],
+      "answer": "Regular offline backups and security awareness",
+      "explanation": "Backups + education are key. Antivirus helps, but will not catch everything."
+    },
+    {
+      "question": "What is a ransomware “note”?",
+      "choices": [
+        "A virus scanner",
+        "A musical note",
+        "A love letter",
+        "A text file or pop-up demanding payment"
+      ],
+      "answer": "A text file or pop-up demanding payment",
+      "explanation": "Once infected, ransomware drops a ransom note with payment instructions and threats."
+    },
+    {
+      "question": "You backup your data to the cloud. Are you 100% safe from ransomware?",
+      "choices": [
+        "Yes, cloud = safe",
+        "No, cloud backups can also be encrypted if synced while infected",
+        "Only if you have a password",
+        "Only during the daytime"
+      ],
+      "answer": "No, cloud backups can also be encrypted if synced while infected",
+      "explanation": "If the ransomware spreads to synced folders, your cloud backups could also be encrypted."
+    },
+    {
+      "question": "What is a “ransomware-as-a-service” (RaaS)?",
+      "choices": [
+        "A new way to protect yourself",
+        "A criminal model where attackers rent ransomware kits to others",
+        "A cloud storage tool",
+        "An antivirus feature"
+      ],
+      "answer": "A criminal model where attackers rent ransomware kits to others",
+      "explanation": "RaaS is when ransomware creators offer kits/tools to affiliates, like a dark version of SaaS (Software as a Service)."
+    },
+    {
+      "question": "Which of these actions best reduces your risk of ransomware?",
+      "choices": [
+        "Clicking all links quickly",
+        "Installing 12 antivirus apps",
+        "Keeping systems updated, avoiding suspicious emails, and using MFA",
+        "Ignoring update prompts"
+      ],
+      "answer": "Keeping systems updated, avoiding suspicious emails, and using MFA",
+      "explanation": "Cyber hygiene like updates, multi-factor authentication (MFA), and training are your best protection."
+    }
+  ]
+},
+ {
+  "module": "12. Malvertising and Drive-By Downloads",
+  "questions": [
+    {
+      "question": "What is malvertising?",
+      "choices": [
+        "Posting spam comments on social media",
+        "The use of malicious online ads to spread malware",
+        "Advertising products using malware",
+        "Legitimate ads about cybersecurity tools"
+      ],
+      "answer": "The use of malicious online ads to spread malware",
+      "explanation": "Malvertising = malicious + advertising. It's when attackers place malware-infected ads on websites (even legitimate ones) often using real ad networks."
+    },
+    {
+      "question": "What is a “drive-by download”?",
+      "choices": [
+        "A game installation",
+        "Downloading a file while driving",
+        "Using torrents to download movies",
+        "A file automatically downloaded to your device without consent when you visit a webpage"
+      ],
+      "answer": "A file automatically downloaded to your device without consent when you visit a webpage",
+      "explanation": "Drive-by downloads do not require clicking, simply visiting a compromised site or ad can trigger the infection silently."
+    },
+    {
+      "question": "How do cybercriminals get malvertising onto legitimate websites?",
+      "choices": [
+        "Using HTML only",
+        "Submitting infected ads to third-party ad networks that distribute them widely",
+        "Hacking every website",
+        "Creating funny memes"
+      ],
+      "answer": "Submitting infected ads to third-party ad networks that distribute them widely",
+      "explanation": "Attackers exploit the ad ecosystem by submitting malicious ads to trusted ad networks, which unknowingly deliver them to mainstream sites."
+    },
+    {
+      "question": "What is a common sign of malvertising?",
+      "choices": [
+        "A cat video plays loudly",
+        "You see your own reflection on the screen",
+        "A website redirects you unexpectedly to sketchy pages",
+        "A secure padlock appears"
+      ],
+      "answer": "A website redirects you unexpectedly to sketchy pages",
+      "explanation": "Malvertising can cause sudden redirects, pop-ups, fake software updates, or scareware messages, especially on click or load."
+    },
+    {
+      "question": "Which software is most likely to be exploited via drive-by downloads?",
+      "choices": [
+        "Calculator",
+        "Outdated web browsers or plugins (e.g., Flash, Java, PDF readers)",
+        "Graphics card",
+        "Alarm clock app"
+      ],
+      "answer": "Outdated web browsers or plugins (e.g., Flash, Java, PDF readers)",
+      "explanation": "Old plugins and browsers often have unpatched vulnerabilities, which drive-by malware silently exploits upon loading the site."
+    },
+    {
+      "question": "What is the role of exploit kits in malvertising?",
+      "choices": [
+        "Making funny ads",
+        "Disabling Wi-Fi",
+        "Automatically identifying software vulnerabilities and injecting malware",
+        "Advertising antivirus software"
+      ],
+      "answer": "Automatically identifying software vulnerabilities and injecting malware",
+      "explanation": "Exploit kits are toolkits hosted on malicious sites that scan your browser for weaknesses and deploy malware without your knowledge."
+    },
+    {
+      "question": "What type of malware is most commonly delivered via malvertising?",
+      "choices": [
+        "Screensavers",
+        "Ransomware, spyware, and banking trojans",
+        "Antivirus apps",
+        "Text files"
+      ],
+      "answer": "Ransomware, spyware, and banking trojans",
+      "explanation": "Malvertising often delivers high-impact malware like ransomware, spyware, and credential-stealing trojans, targeting user trust."
+    },
+    {
+      "question": "Why is malvertising so dangerous to large audiences?",
+      "choices": [
+        "It affects only government computers",
+        "It can reach millions instantly via legitimate websites",
+        "Users must install the malware manually",
+        "It only affects dark web users"
+      ],
+      "answer": "It can reach millions instantly via legitimate websites",
+      "explanation": "Because it runs through mainstream ad networks, malvertising can show up on trusted websites and reach huge audiences quickly."
+    },
+    {
+      "question": "You visit a well-known news site and your system slows down, then crashes. What may have happened?",
+      "choices": [
+        "News overload",
+        "Malvertising or a drive-by download triggered malware installation",
+        "Hardware failure",
+        "You need glasses"
+      ],
+      "answer": "Malvertising or a drive-by download triggered malware installation",
+      "explanation": "High-traffic sites using external ads may unknowingly serve infected content, leading to invisible malware delivery upon visit."
+    },
+    {
+      "question": "How can you protect yourself from malvertising and drive-by downloads?",
+      "choices": [
+        "Keep browsers/plugins updated, use ad blockers, and avoid suspicious links",
+        "Never use the internet",
+        "Use dark mode",
+        "Only browse during the day"
+      ],
+      "answer": "Keep browsers/plugins updated, use ad blockers, and avoid suspicious links",
+      "explanation": "Preventative steps include regular updates, disabling vulnerable plugins, using reputable ad blockers, and avoiding sketchy websites."
+    },
+    {
+      "question": "What is \"clickjacking\"?",
+      "choices": [
+        "Clicking too many ads",
+        "Stealing your mouse",
+        "When an attacker hides malicious links under seemingly safe buttons",
+        "Opening too many tabs at once"
+      ],
+      "answer": "When an attacker hides malicious links under seemingly safe buttons",
+      "explanation": "Clickjacking tricks users into clicking hidden elements (like “Allow” or “Install”) disguised under safe content, often part of malvertising schemes."
+    },
+    {
+      "question": "Which user behavior increases vulnerability to drive-by malware?",
+      "choices": [
+        "Using incognito mode",
+        "Watching YouTube only",
+        "Keeping tabs organized",
+        "Using default browser settings and ignoring updates"
+      ],
+      "answer": "Using default browser settings and ignoring updates",
+      "explanation": "Unpatched software, lack of browser hygiene, and ignoring update prompts can make you an easy target for automated exploits."
+    }
+  ]
+},
+ {
+  "module": "13. Malicious Browser Extensions",
+  "questions": [
+    {
+      "question": "What is a browser extension?",
+      "choices": [
+        "A type of virus",
+        "An antivirus plugin",
+        "A backup browser",
+        "A small add-on that extends browser functionality"
+      ],
+      "answer": "A small add-on that extends browser functionality",
+      "explanation": "Browser extensions are small software modules that add features to browsers (like Chrome, Firefox, Edge), but can also be used to spy or manipulate websites."
+    },
+    {
+      "question": "Why can extensions be dangerous?",
+      "choices": [
+        "They use too much RAM",
+        "They often have broad permissions like reading all website data",
+        "They are very large",
+        "They block pop-ups"
+      ],
+      "answer": "They often have broad permissions like reading all website data",
+      "explanation": "Many extensions request “Read and change all your data on websites you visit”, therefore allowing full access to what you type, view, and click."
+    },
+    {
+      "question": "Which of the following is a real malicious use of extensions?",
+      "choices": [
+        "Changing browser fonts",
+        "Stealing login credentials",
+        "Speeding up downloads",
+        "Drawing on webpages"
+      ],
+      "answer": "Stealing login credentials",
+      "explanation": "Some malicious extensions log keystrokes, hijack sessions, or redirect login forms to steal your username and password."
+    },
+    {
+      "question": "How do malicious extensions often reach users?",
+      "choices": [
+        "Via printer software",
+        "Through official browser stores using fake reviews and names",
+        "From government emails",
+        "Only on the dark web"
+      ],
+      "answer": "Through official browser stores using fake reviews and names",
+      "explanation": "Even official web stores (like Chrome Web Store) sometimes host malicious extensions disguised as tools, games, or productivity boosters — often with fake 5-star reviews."
+    },
+    {
+      "question": "What does “browser hijacking” mean in this context?",
+      "choices": [
+        "Redirecting searches, injecting ads, or stealing data using an extension",
+        "Crashing your browser",
+        "Freezing web pages",
+        "Blocking updates"
+      ],
+      "answer": "Redirecting searches, injecting ads, or stealing data using an extension",
+      "explanation": "Hijackers manipulate what you see online — swapping out links, modifying search results, or tracking you silently via an extension."
+    },
+    {
+      "question": "Which permission should always raise a red flag in an extension?",
+      "choices": [
+        "“Play sound”",
+        "“Access your clipboard”",
+        "“Read and change all your data on all websites”",
+        "“Dark mode”"
+      ],
+      "answer": "“Read and change all your data on all websites”",
+      "explanation": "If an extension wants full access to every site you visit, it is a major red flag. Only a few trusted tools should ever need this."
+    },
+    {
+      "question": "What happened with the “Great Suspender” extension in 2021?",
+      "choices": [
+        "It was featured by Google",
+        "It boosted memory speed",
+        "It was removed for containing hidden malware",
+        "It added bookmarks automatically"
+      ],
+      "answer": "It was removed for containing hidden malware",
+      "explanation": "The popular “Great Suspender” Chrome extension was sold, and new owners silently added malicious code to track users, showing how even trusted tools can turn rogue."
+    },
+    {
+      "question": "Can extensions mine cryptocurrency without you knowing?",
+      "choices": [
+        "Only during gaming",
+        "Yes, using your CPU in the background",
+        "Only with permission",
+        "Never"
+      ],
+      "answer": "Yes, using your CPU in the background",
+      "explanation": "Malicious extensions can secretly run cryptominers in your browser, consuming processing power and energy, slowing down your device."
+    },
+    {
+      "question": "What should you do before installing any browser extension?",
+      "choices": [
+        "Call your ISP",
+        "Scan it with antivirus",
+        "Read permissions, reviews, publisher info, and check for recent suspicious updates",
+        "Just click “Add”"
+      ],
+      "answer": "Read permissions, reviews, publisher info, and check for recent suspicious updates",
+      "explanation": "Always inspect the extension's permissions, developer credibility, and when it was last updated as sudden ownership changes can signal danger."
+    },
+    {
+      "question": "Can extensions bypass 2FA (Two-Factor Authentication)?",
+      "choices": [
+        "Yes, by stealing session cookies after login",
+        "No, it is impossible",
+        "Only on mobile",
+        "Only on Facebook"
+      ],
+      "answer": "Yes, by stealing session cookies after login",
+      "explanation": "Once you log in with 2FA, malicious extensions can hijack your session using cookies, bypassing the need to re-enter 2FA codes."
+    },
+    {
+      "question": "How can you reduce risk from extensions you already have?",
+      "choices": [
+        "Disable or remove unused ones, review permissions regularly",
+        "Keep your browser fullscreen",
+        "Ignore them",
+        "Use only one tab"
+      ],
+      "answer": "Disable or remove unused ones, review permissions regularly",
+      "explanation": "Many users install dozens of extensions and forget them. Clean up regularly, and keep only those you trust and use often."
+    },
+    {
+      "question": "What is the safest browser behavior regarding extensions?",
+      "choices": [
+        "Turn off your browser every 10 minutes",
+        "Use only themes",
+        "Use minimal extensions from verified developers with transparent permissions",
+        "Install every productivity tool"
+      ],
+      "answer": "Use minimal extensions from verified developers with transparent permissions",
+      "explanation": "Minimalism is key. The fewer extensions you install, the lower the attack surface, especially for apps with powerful access to your online life."
+    }
+  ]
+},
+ {
+  "module": "14. USB Traps and Physical Device Exploits",
+  "questions": [
+    {
+      "question": "A USB drive is left in a company parking lot. An employee plugs it in, unknowingly activating malware. This is an example of:",
+      "choices": [
+        "Logic bomb",
+        "Social engineering",
+        "Insider threat",
+        "Drive-by download"
+      ],
+      "answer": "Social engineering",
+      "explanation": "Dropping infected USBs in public areas relies on curiosity or helpful behavior  (classic social engineering)."
+    },
+    {
+      "question": "What kind of device appears to be a USB flash drive but actually acts as a keyboard, typing commands rapidly when plugged in?",
+      "choices": [
+        "YubiKey",
+        "Crypto miner",
+        "Keylogger stick",
+        "Rubber Ducky"
+      ],
+      "answer": "Rubber Ducky",
+      "explanation": "A Rubber Ducky is a malicious USB that emulates a keyboard and delivers automated payloads in seconds."
+    },
+    {
+      "question": "What makes Rubber Ducky attacks especially dangerous?",
+      "choices": [
+        "They bypass traditional antivirus by acting as human input",
+        "They inject encrypted ransomware directly",
+        "They self-destruct after use",
+        "They can infect phones via Bluetooth"
+      ],
+      "answer": "They bypass traditional antivirus by acting as human input",
+      "explanation": "Since it behaves like a keyboard, many security systems do not detect it as a threat — even though it is running malicious scripts."
+    },
+    {
+      "question": "A hacker builds a phone charger that records everything typed into a phone when connected. This is an example of:",
+      "choices": [
+        "Logic bomb",
+        "Juice jacking",
+        "Keylogger malware",
+        "Packet injection"
+      ],
+      "answer": "Juice jacking",
+      "explanation": "Juice jacking refers to data theft or malware injection via USB charging ports or cables."
+    },
+    {
+      "question": "What is the most secure way to prevent juice jacking on your mobile device?",
+      "choices": [
+        "Use a data-blocking USB adapter (\"USB condom\")",
+        "Use any USB as long as the cable is short",
+        "Put phone in airplane mode before charging",
+        "Delete browser history daily"
+      ],
+      "answer": "Use a data-blocking USB adapter (\"USB condom\")",
+      "explanation": "A USB data blocker disables data pins, allowing only power flow, subsequently preventing unauthorized data transfer."
+    },
+    {
+      "question": "Which physical device is commonly used by hackers to intercept keystrokes on a victim’s machine?",
+      "choices": [
+        "Hardware keylogger",
+        "Radio scanner",
+        "USB-C replicator",
+        "Ethernet bridge"
+      ],
+      "answer": "Hardware keylogger",
+      "explanation": "Hardware keyloggers are small tools that sit between a keyboard and PC, recording everything typed which is often used in targeted surveillance."
+    },
+    {
+      "question": "You find a USB on the ground that has no label. What's the safest next step?",
+      "choices": [
+        "Reformat the USB and use it",
+        "Connect it to a public kiosk",
+        "Turn it in to the IT department without using it",
+        "Plug it into a personal computer"
+      ],
+      "answer": "Turn it in to the IT department without using it",
+      "explanation": "Plugging in unknown USBs is dangerous, always escalate to professionals without interacting with the device."
+    },
+    {
+      "question": "What is a BadUSB attack?",
+      "choices": [
+        "A virus that infects only USB drivers",
+        "Malware that corrupts USB power supply",
+        "A reprogrammed USB firmware that executes malicious code",
+        "A software exploit that hides in MP3 players"
+      ],
+      "answer": "A reprogrammed USB firmware that executes malicious code",
+      "explanation": "BadUSB is a class of attacks where USB firmware is reprogrammed to behave maliciously which is undetectable by standard antivirus."
+    },
+    {
+      "question": "Which of the following devices is most at risk from BadUSB firmware attacks?",
+      "choices": [
+        "Keyboards and mice",
+        "USB fans",
+        "Flash drives",
+        "All of the above"
+      ],
+      "answer": "All of the above",
+      "explanation": "Any USB device with firmware (including keyboards, webcams, and even toys) can be exploited via BadUSB."
+    },
+    {
+      "question": "Which of the following is a non-network method for delivering malware into air-gapped systems (offline, no internet)?",
+      "choices": [
+        "DNS tunneling",
+        "Evil twin Wi-Fi",
+        "Infected USB or device trap",
+        "Phishing"
+      ],
+      "answer": "Infected USB or device trap",
+      "explanation": "USBs are one of the few methods capable of infiltrating air-gapped (offline) systems with no network access."
+    },
+    {
+      "question": "Which principle reduces risk from rogue USB devices?",
+      "choices": [
+        "Principle of redundancy",
+        "Principle of least privilege",
+        "Principle of firewall zoning",
+        "Principle of encryption"
+      ],
+      "answer": "Principle of least privilege",
+      "explanation": "If users do not have admin rights, even malicious devices plugged in cannot auto-execute harmful actions."
+    },
+    {
+      "question": "What is the BEST enterprise strategy to reduce USB-based attack risk?",
+      "choices": [
+        "Require antivirus on flash drives",
+        "Disable all USB ports",
+        "Educate users, monitor ports, and use endpoint protection with USB controls",
+        "Use only branded USBs"
+      ],
+      "answer": "Educate users, monitor ports, and use endpoint protection with USB controls",
+      "explanation": "Full USB lockdown is impractical. A balanced strategy includes user training, monitoring tools, and access control systems."
+    }
+  ]
+},
+ {
+  "module": "15. QR Code and NFC Exploits",
+  "questions": [
+    {
+      "question": "What is the primary risk of scanning a random QR code in public?",
+      "choices": [
+        "It charges your phone",
+        "It will slow down your device",
+        "It could redirect you to a phishing site or trigger a malicious download",
+        "Nothing happens"
+      ],
+      "answer": "It could redirect you to a phishing site or trigger a malicious download",
+      "explanation": "QR (Quick Response) codes can be tampered with to lead users to fake websites, install malware, or steal personal information silently."
+    },
+    {
+      "question": "What does “QRishing” refer to?",
+      "choices": [
+        "Upgrading QR scanners",
+        "Phishing attacks using QR codes to steal sensitive data",
+        "Quick refreshing",
+        "A legitimate QR-based login"
+      ],
+      "answer": "Phishing attacks using QR codes to steal sensitive data",
+      "explanation": "Like phishing, QRishing tricks people into scanning a QR code that leads to a fake login or payment page to harvest their credentials."
+    },
+    {
+      "question": "How can attackers abuse public posters or flyers with QR codes?",
+      "choices": [
+        "By replacing legitimate QR stickers with malicious ones (sticker attacks)",
+        "By adding NFC chips to them",
+        "They cannot",
+        "By burning the posters"
+      ],
+      "answer": "By replacing legitimate QR stickers with malicious ones (sticker attacks)",
+      "explanation": "Cybercriminals often replace the original QR code with a fake one using stickers. These direct users to dangerous websites or malware downloads."
+    },
+    {
+      "question": "NFC stands for what in cybersecurity context?",
+      "choices": [
+        "Not Fully Charged",
+        "Near Field Communication",
+        "Network Free Channel",
+        "New File Creator"
+      ],
+      "answer": "Near Field Communication",
+      "explanation": "Near Field Communication (NFC) is a short-range wireless technology that enables contactless data exchange between devices, like tapping your phone to pay. It's convenient but can be exploited by attackers."
+    },
+    {
+      "question": "What kind of data can malicious NFC tags contain?",
+      "choices": [
+        "URLs, Wi-Fi passwords, Bluetooth pairing requests, or app install prompts",
+        "Phone wallpapers",
+        "Game cheats",
+        "Weather updates"
+      ],
+      "answer": "URLs, Wi-Fi passwords, Bluetooth pairing requests, or app install prompts",
+      "explanation": "NFC tags can silently trigger URLs, change system settings, or install apps, especially if your phone automatically processes NFC data."
+    },
+    {
+      "question": "Which of the following is a real-world example of a QR-based attack?",
+      "choices": [
+        "QR tattoos",
+        "Fake parking meters using QR codes to steal card details",
+        "Posting memes with QR codes",
+        "Phone chargers with QR logos"
+      ],
+      "answer": "Fake parking meters using QR codes to steal card details",
+      "explanation": "In many cities, criminals cover official parking meter QR codes with fake ones to steal payment credentials from unsuspecting drivers."
+    },
+    {
+      "question": "What is an NFC “relay attack”?",
+      "choices": [
+        "Accelerating Bluetooth pairing",
+        "Sending long messages",
+        "Passing files between two phones",
+        "Intercepting communication between a card and reader to clone or steal data"
+      ],
+      "answer": "Intercepting communication between a card and reader to clone or steal data",
+      "explanation": "A relay attack captures and relays NFC signals from one device (like a contactless card) to another, allowing an attacker to bypass proximity-based security like smart locks or payment terminals."
+    },
+    {
+      "question": "Why are smartphones especially vulnerable to QR or NFC threats?",
+      "choices": [
+        "They have big screens",
+        "Their keyboards are small",
+        "They combine multiple technologies with weak default settings",
+        "Phones are waterproof"
+      ],
+      "answer": "They combine multiple technologies with weak default settings",
+      "explanation": "Most smartphones allow scanning QR codes and accepting NFC signals by default — often without clear warnings or user confirmation."
+    },
+    {
+      "question": "How can you detect a malicious QR code before scanning it?",
+      "choices": [
+        "Use your hand",
+        "Tap it twice",
+        "Check for stickers, unusual placement, or tampering",
+        "Use Chrome only"
+      ],
+      "answer": "Check for stickers, unusual placement, or tampering",
+      "explanation": "Visually inspect public QR codes. If it looks like a sticker placed over something or seems out of place, don’t scan it."
+    },
+    {
+      "question": "Which security setting should be turned off when not using NFC?",
+      "choices": [
+        "NFC communication (Near Field Communication)",
+        "Mobile data",
+        "Bluetooth",
+        "2FA"
+      ],
+      "answer": "NFC communication (Near Field Communication)",
+      "explanation": "Disabling NFC when not needed reduces the risk of drive-by attacks, where a malicious NFC signal is picked up in crowded areas like transit hubs."
+    },
+    {
+      "question": "What is a safe way to scan a QR code?",
+      "choices": [
+        "Always scan fast",
+        "Use your front camera",
+        "Use a security app that shows the link before opening it",
+        "Print it first"
+      ],
+      "answer": "Use a security app that shows the link before opening it",
+      "explanation": "Security apps or advanced QR scanners can preview the URL or action before taking you there, helping you avoid malicious links."
+    },
+    {
+      "question": "What should you do if you scanned a suspicious QR code or NFC tag?",
+      "choices": [
+        "Throw away your phone",
+        "Ignore it",
+        "Disconnect from the internet, run a malware scan, and review recent activity",
+        "Restart your phone"
+      ],
+      "answer": "Disconnect from the internet, run a malware scan, and review recent activity",
+      "explanation": "Immediately disconnect, check for unknown apps or settings changes, and scan your phone with mobile antivirus to prevent further damage."
+    }
+  ]
+},
+ {
+  "module": "16. Deepfakes and Voice Spoofing Attacks",
+  "questions": [
+    {
+      "question": "What is a deepfake?",
+      "choices": [
+        "A fake news article",
+        "An AI-generated video or audio that mimics real people",
+        "A fake antivirus software",
+        "A phishing link hidden in a PDF"
+      ],
+      "answer": "An AI-generated video or audio that mimics real people",
+      "explanation": "Deepfakes use AI to create realistic audio/video impersonations that are often used in scams, misinformation, or identity fraud."
+    },
+    {
+      "question": "Which technology powers most deepfake generation tools?",
+      "choices": [
+        "Blockchain",
+        "CAPTCHA",
+        "Deep Learning (Neural Networks)",
+        "QR codes"
+      ],
+      "answer": "Deep Learning (Neural Networks)",
+      "explanation": "Deep learning, especially GANs (Generative Adversarial Networks), is used to train models to mimic speech and faces."
+    },
+    {
+      "question": "A CEO’s voice calls the finance department requesting an urgent wire transfer. What is the best first response?",
+      "choices": [
+        "Send the money immediately — it sounds urgent",
+        "Text the CEO to confirm",
+        "Authenticate using a second method like internal chat or call-back",
+        "Ignore it completely"
+      ],
+      "answer": "Authenticate using a second method like internal chat or call-back",
+      "explanation": "Voice spoofing can sound real. Always verify through a trusted second channel before acting."
+    },
+    {
+      "question": "Which of the following is a common use of deepfakes in cybercrime?",
+      "choices": [
+        "Improving CAPTCHA accuracy",
+        "Hacking Wi-Fi",
+        "Spreading misinformation or impersonating executives",
+        "Encrypting data for security"
+      ],
+      "answer": "Spreading misinformation or impersonating executives",
+      "explanation": "Deepfakes are often used in business email compromise (BEC) or social engineering to fake authority."
+    },
+    {
+      "question": "What is “voice cloning”?",
+      "choices": [
+        "Creating backup copies of your voice",
+        "Recording voices for audiobooks",
+        "AI replicating someone’s voice tone and speech patterns",
+        "An audio bug in devices"
+      ],
+      "answer": "AI replicating someone’s voice tone and speech patterns",
+      "explanation": "Voice cloning uses AI to mimic someone's exact voice, often from just a few seconds of audio."
+    },
+    {
+      "question": "Which red flag might indicate a deepfake video?",
+      "choices": [
+        "Perfect lip-sync and lighting",
+        "Lack of blinking, unnatural eye movements",
+        "Video from an official source",
+        "High-definition resolution"
+      ],
+      "answer": "Lack of blinking, unnatural eye movements",
+      "explanation": "Many deepfakes struggle with eye movement, facial alignment, or timing glitches, these are key giveaways."
+    },
+    {
+      "question": "Why are deepfakes becoming a growing cybersecurity threat?",
+      "choices": [
+        "They slow down computers",
+        "They are hard to create",
+        "They automate data backups",
+        "They make social engineering harder to detect"
+      ],
+      "answer": "They make social engineering harder to detect",
+      "explanation": "When cybercriminals combine deepfakes with phishing, they make scams more believable and harder to catch."
+    },
+    {
+      "question": "How can companies protect themselves from voice spoofing attacks?",
+      "choices": [
+        "Disable all audio devices",
+        "Train staff to verify voice commands via a second channel",
+        "Switch to handwritten communication",
+        "Use speakerphones for all calls"
+      ],
+      "answer": "Train staff to verify voice commands via a second channel",
+      "explanation": "Verification policies and multi-channel authentication prevent attackers from exploiting voice deepfakes."
+    },
+    {
+      "question": "A deepfake video of your manager asks you to share login credentials. What should you do?",
+      "choices": [
+        "Share quickly, it’s urgent",
+        "Screenshot and share the video",
+        "Pause and verify via another trusted method",
+        "Try to edit the video"
+      ],
+      "answer": "Pause and verify via another trusted method",
+      "explanation": "Always validate unexpected requests, even if the source appears real. Deepfakes are powerful social engineering tools."
+    },
+    {
+      "question": "Which platform has seen a rise in deepfake-based scams?",
+      "choices": [
+        "Online gaming forums",
+        "Workplace collaboration apps (like Zoom, Slack, Teams)",
+        "Fitness trackers",
+        "Banking terminals"
+      ],
+      "answer": "Workplace collaboration apps (like Zoom, Slack, Teams)",
+      "explanation": "Cybercriminals are infiltrating real-time collaboration platforms using deepfaked audio/video of bosses and coworkers."
+    },
+    {
+      "question": "Which method is most reliable for authenticating identity in a deepfake-prone environment?",
+      "choices": [
+        "Phone call alone",
+        "Visual recognition",
+        "Multi-factor authentication (e.g., password + security key)",
+        "Recognizing someone’s voice"
+      ],
+      "answer": "Multi-factor authentication (e.g., password + security key)",
+      "explanation": "MFA doesn't rely on human recognition alone. It ensures security even if the attacker fakes appearance or voice."
+    },
+    {
+      "question": "What is one emerging way to detect deepfakes?",
+      "choices": [
+        "Social media likes",
+        "Eye movement tracking and facial micro-expression analysis",
+        "Sound quality rating",
+        "Using pop-up blockers"
+      ],
+      "answer": "Eye movement tracking and facial micro-expression analysis",
+      "explanation": "AI tools now analyze subtle human behaviors (like micro-movements) to detect if a face or voice is artificially generated."
+    }
+  ]
+},
+ {
+  "module": "17. AI-Powered Phishing and Chatbot Manipulation",
+  "questions": [
+    {
+      "question": "What is AI-powered phishing?",
+      "choices": [
+        "Social engineering attacks generated or enhanced by AI to appear more realistic and personalized",
+        "A method of phishing using YouTube",
+        "Phishing emails written manually by hackers",
+        "Sending fake virus alerts"
+      ],
+      "answer": "Social engineering attacks generated or enhanced by AI to appear more realistic and personalized",
+      "explanation": "AI can automatically generate emails, messages, or websites that mimic real people or companies, as a consequence making phishing more scalable and believable."
+    },
+    {
+      "question": "Which AI tool is most likely to be abused for phishing email generation?",
+      "choices": [
+        "VPNs",
+        "ChatGPT-style LLMs",
+        "Antivirus software",
+        "Blockchain"
+      ],
+      "answer": "ChatGPT-style LLMs",
+      "explanation": "Large Language Models (LLMs) can craft perfectly-written, personalized messages making them ideal for automated phishing."
+    },
+    {
+      "question": "What is the term for phishing attacks that are personalized using AI-scraped social media info?",
+      "choices": [
+        "Logic bombs",
+        "SQL injection",
+        "Broad phishing",
+        "Spear phishing"
+      ],
+      "answer": "Spear phishing",
+      "explanation": "Spear phishing targets specific individuals using AI to scrape LinkedIn, Instagram, etc..., making attacks much more convincing."
+    },
+    {
+      "question": "What makes AI phishing attacks more dangerous than traditional ones?",
+      "choices": [
+        "They only work offline",
+        "They are faster, scalable, and tailored to victims using harvested personal data",
+        "They cost more",
+        "They require face-to-face interaction"
+      ],
+      "answer": "They are faster, scalable, and tailored to victims using harvested personal data",
+      "explanation": "AI allows attackers to mass-generate thousands of realistic messages tailored to each target, increasing success rates."
+    },
+    {
+      "question": "A malicious actor tricks a customer service chatbot into revealing user data. What is this called?",
+      "choices": [
+        "Brute force",
+        "Prompt injection",
+        "Data scraping",
+        "Model inversion"
+      ],
+      "answer": "Prompt injection",
+      "explanation": "Prompt injection attacks involve tricking a chatbot into executing harmful instructions, bypassing its safety or revealing sensitive info."
+    },
+    {
+      "question": "Which of the following is a common use of AI by cybercriminals?",
+      "choices": [
+        "Speeding up encryption",
+        "Automating scam messages in different languages and tones",
+        "Writing secure code",
+        "Making music"
+      ],
+      "answer": "Automating scam messages in different languages and tones",
+      "explanation": "AI can write emails, SMS, fake job offers, or romantic scams in any tone/language, helping criminals scale globally."
+    },
+    {
+      "question": "What would be a red flag in detecting an AI-written phishing email?",
+      "choices": [
+        "It mimics your friend’s writing style too perfectly",
+        "It has a grammar mistake",
+        "It asks about your favorite movie",
+        "It is short and vague"
+      ],
+      "answer": "It mimics your friend’s writing style too perfectly",
+      "explanation": "AI-generated attacks can now mimic specific writing styles, which may feel “too perfect” or overly personalized."
+    },
+    {
+      "question": "What is a “deep phishing” attack?",
+      "choices": [
+        "A virus in a phishing email",
+        "Phishing crafted using deep learning to adapt in real time to user responses",
+        "A phishing attack layered with multiple redirects",
+        "A fake social media profile"
+      ],
+      "answer": "Phishing crafted using deep learning to adapt in real time to user responses",
+      "explanation": "Deep phishing uses deep learning models to adapt messages, learn from user input, and adjust language on the fly."
+    },
+    {
+      "question": "An AI chatbot is trained with fake data by an attacker to behave wrongly. What attack method is this?",
+      "choices": [
+        "Spear phishing",
+        "Data poisoning",
+        "Deepfaking",
+        "Credential stuffing"
+      ],
+      "answer": "Data poisoning",
+      "explanation": "Data poisoning involves feeding a model false or malicious training data so it behaves unpredictably or insecurely."
+    },
+    {
+      "question": "What role do chatbots play in advanced phishing ecosystems?",
+      "choices": [
+        "They mine Bitcoin",
+        "They detect attacks",
+        "They automate conversations with victims, posing as customer support or job recruiters",
+        "None"
+      ],
+      "answer": "They automate conversations with victims, posing as customer support or job recruiters",
+      "explanation": "Criminals use chatbots as fake HR reps, customer agents, or lovers, automating trust-building before launching scams."
+    },
+    {
+      "question": "What is the risk of AI in phishing calls (vishing)?",
+      "choices": [
+        "AI can trace calls",
+        "Attackers use cloned voices to impersonate real people and manipulate victims",
+        "AI can't make calls",
+        "Phones block all AI calls"
+      ],
+      "answer": "Attackers use cloned voices to impersonate real people and manipulate victims",
+      "explanation": "Using voice cloning AI, attackers can make calls in a victim’s friend or boss's voice, boosting trust and urgency."
+    },
+    {
+      "question": "Best defense against AI-powered phishing?",
+      "choices": [
+        "Only use chatbots in dark mode",
+        "Check grammar",
+        "Use multi-factor authentication, train users to spot subtle social engineering, and monitor chatbot behavior",
+        "Use more emojis"
+      ],
+      "answer": "Use multi-factor authentication, train users to spot subtle social engineering, and monitor chatbot behavior",
+      "explanation": "AI phishing attacks are harder to spot. MFA, awareness training, and real-time monitoring are key defenses."
+    }
+  ]
+},
+ {
+  "module": "18. Synthetic Identity Networks",
+  "questions": [
+    {
+      "question": "What is a synthetic identity in cybersecurity?",
+      "choices": [
+        "A complete fake identity made from real and fake data",
+        "A stolen social media profile",
+        "A cloned device ID",
+        "An identity built from only AI-generated names"
+      ],
+      "answer": "A complete fake identity made from real and fake data",
+      "explanation": "A synthetic identity combines real (e.g. SSNs) and fake data (e.g. names, addresses) to create a convincing persona that does not truly exist."
+    },
+    {
+      "question": "Why are synthetic identities harder to detect than stolen ones?",
+      "choices": [
+        "They use blockchain",
+        "They appear in random countries",
+        "They pass basic verification but have no real history",
+        "They're made by real people"
+      ],
+      "answer": "They pass basic verification but have no real history",
+      "explanation": "Unlike stolen IDs, synthetic identities are “clean slates”, not flagged in breaches, so they pass verification and build trust over time."
+    },
+    {
+      "question": "What is a “synthetic identity network”?",
+      "choices": [
+        "A botnet made of fake devices",
+        "A cluster of fake people who interact to simulate real activity",
+        "A team of hackers using the same identity",
+        "A blockchain of identities"
+      ],
+      "answer": "A cluster of fake people who interact to simulate real activity",
+      "explanation": "Cybercriminals create networks of fake identities that interact (e.g. friend each other, message, transact) to make them appear legitimate."
+    },
+    {
+      "question": "Why do criminals create networks, not just one fake identity?",
+      "choices": [
+        "One identity can vouch for another, making verification stronger",
+        "Because it is easier",
+        "To confuse databases",
+        "They want to go viral"
+      ],
+      "answer": "One identity can vouch for another, making verification stronger",
+      "explanation": "One fake account leaves a trail. But multiple fake identities interacting builds trust signals (reviews, transfers, relationships)."
+    },
+    {
+      "question": "Which of the following would be most suspicious in spotting synthetic identity fraud?",
+      "choices": [
+        "A profile with 500 followers who all joined in the same week",
+        "A verified influencer",
+        "An old account with a job title",
+        "An account with 0 followers"
+      ],
+      "answer": "A profile with 500 followers who all joined in the same week",
+      "explanation": "Clusters of accounts created at the same time, with similar data patterns, often indicate mass-fake identity farming."
+    },
+    {
+      "question": "How do synthetic identities often “build credit” before fraud?",
+      "choices": [
+        "By hacking banks",
+        "By opening small accounts, paying bills, and gaining trust",
+        "By impersonating celebrities",
+        "By using stolen credit cards"
+      ],
+      "answer": "By opening small accounts, paying bills, and gaining trust",
+      "explanation": "They act like real users — open mobile plans, buy items, repay debt, then later go big with fraud (“bust-out fraud”)."
+    },
+    {
+      "question": "Which tool would help detect synthetic identity networks?",
+      "choices": [
+        "CAPTCHA",
+        "Antivirus software",
+        "Graph analytics",
+        "Ping flood test"
+      ],
+      "answer": "Graph analytics",
+      "explanation": "Graph analytics maps relationships between users, helping detect clusters of fake accounts that interact too cleanly."
+    },
+    {
+      "question": "How might AI accelerate synthetic identity creation?",
+      "choices": [
+        "It generates human-like profiles, voices, faces, and social posts at scale",
+        "It can auto-solve puzzles",
+        "It breaks into Wi-Fi",
+        "It deletes old accounts"
+      ],
+      "answer": "It generates human-like profiles, voices, faces, and social posts at scale",
+      "explanation": "AI tools like GANs and LLMs can generate convincing fake faces, bios, comments, and more, enabling scalable fake personas."
+    },
+    {
+      "question": "What is a red flag of a synthetic identity?",
+      "choices": [
+        "Profile shows inconsistent timeline or recycled content",
+        "User posts memes",
+        "Email ends in .com",
+        "Account has birthday listed"
+      ],
+      "answer": "Profile shows inconsistent timeline or recycled content",
+      "explanation": "Synthetic profiles often reuse text, fabricate timelines, or use AI-generated media inconsistently."
+    },
+    {
+      "question": "A dating scammer uses 5 different fake profiles to talk to a victim. What tactic is this?",
+      "choices": [
+        "Sockpuppet network",
+        "Brute force phishing",
+        "Identity theft",
+        "DDoS"
+      ],
+      "answer": "Sockpuppet network",
+      "explanation": "A sockpuppet network is a group of fake personas controlled by one actor to manipulate or deceive targets."
+    },
+    {
+      "question": "What is “bust-out fraud” in synthetic identity crime?",
+      "choices": [
+        "A virus attack",
+        "When a fake ID suddenly maxes out credit and vanishes",
+        "Exposing the hacker",
+        "Email scams"
+      ],
+      "answer": "When a fake ID suddenly maxes out credit and vanishes",
+      "explanation": "After months of acting legit, the synthetic identity takes out large loans, maxes out cards, and disappears, this is bust-out."
+    },
+    {
+      "question": "What is the best defense against synthetic identity fraud?",
+      "choices": [
+        "Stop allowing online forms",
+        "Block new accounts",
+        "Use behavioral analysis, device fingerprinting, and cross-platform verification",
+        "Only accept in-person visits"
+      ],
+      "answer": "Use behavioral analysis, device fingerprinting, and cross-platform verification",
+      "explanation": "Traditional checks fail. Behavioral biometrics, device profiling, and cross-system checks can help catch fake-but-clean IDs."
+    }
+  ]
+},
+ {
+  "module": "19. Cyber Threats in Gaming Platforms and Discord Servers",
+  "questions": [
+    {
+      "question": "Why are online gaming platforms attractive to cybercriminals?",
+      "choices": [
+        "Games are educational",
+        "They have large user bases, in-game economies, and often weak security practices",
+        "Players enjoy teamwork",
+        "They're easy to shut down"
+      ],
+      "answer": "They have large user bases, in-game economies, and often weak security practices",
+      "explanation": "Popular games like Minecraft, Fortnite, and Roblox involve digital currencies, voice chats, and peer-to-peer sharing, making them ideal for scams and malware distribution."
+    },
+    {
+      "question": "What is “account takeover” in gaming platforms?",
+      "choices": [
+        "Gaining unauthorized access to someone’s game account",
+        "Buying new games",
+        "Changing screen brightness",
+        "Leaving a guild"
+      ],
+      "answer": "Gaining unauthorized access to someone’s game account",
+      "explanation": "Attackers often steal game credentials using phishing, keyloggers, or leaked passwords to take over valuable accounts and resell them."
+    },
+    {
+      "question": "How do hackers spread malware through Discord?",
+      "choices": [
+        "Via voice calls only",
+        "Hosting karaoke nights",
+        "Sending inspirational quotes",
+        "Sharing infected files, fake bots, or malicious links in servers or DMs"
+      ],
+      "answer": "Sharing infected files, fake bots, or malicious links in servers or DMs",
+      "explanation": "Discord allows file sharing and custom bots, which attackers abuse to send trojans, stealers, and fake mod tools disguised as helpful software."
+    },
+    {
+      "question": "What is a common trick used to infect gamers with malware?",
+      "choices": [
+        "Offering free cheats, mods, or currency generators that are actually malware",
+        "Asking for streaming tips",
+        "Selling rare game skins at full price",
+        "Inviting them to tournaments"
+      ],
+      "answer": "Offering free cheats, mods, or currency generators that are actually malware",
+      "explanation": "Many \"cheats\" or \"cracked versions\" are actually trojans or spyware, preying on gamers’ desire for an unfair edge."
+    },
+    {
+      "question": "What is “Nitro scam” in Discord?",
+      "choices": [
+        "A dance trend",
+        "Selling energy drinks",
+        "Free server boosts from Discord",
+        "Fake messages offering free Discord Nitro subscriptions in exchange for login info or clicks"
+      ],
+      "answer": "Fake messages offering free Discord Nitro subscriptions in exchange for login info or clicks",
+      "explanation": "Attackers send fake gift links or create phishing pages mimicking Discord, stealing your login credentials once clicked."
+    },
+    {
+      "question": "How can compromised Discord bots be dangerous?",
+      "choices": [
+        "They tell bad jokes",
+        "They can execute malicious code, spy on users, or steal server data",
+        "They ban everyone",
+        "They flood servers with memes"
+      ],
+      "answer": "They can execute malicious code, spy on users, or steal server data",
+      "explanation": "A compromised or poorly coded bot can be a backdoor that gives attackers access to commands, channels, or sensitive info."
+    },
+    {
+      "question": "What kind of malware is commonly used against gamers?",
+      "choices": [
+        "Email spam",
+        "PDF viruses",
+        "Info stealers (like RedLine or Arkei) targeting saved passwords, tokens, and wallet data",
+        "Game updates"
+      ],
+      "answer": "Info stealers (like RedLine or Arkei) targeting saved passwords, tokens, and wallet data",
+      "explanation": "Info stealers are lightweight and fast, extracting game logins, Discord tokens, and even crypto wallet info from a victim’s system."
+    },
+    {
+      "question": "Why are Discord “token grabbers” effective?",
+      "choices": [
+        "They add emojis to your profile",
+        "They remove ads",
+        "They’re written in C++",
+        "They silently steal your login token, giving attackers full access without a password"
+      ],
+      "answer": "They silently steal your login token, giving attackers full access without a password",
+      "explanation": "A Discord token is like a master key to your account — steal that, and a hacker can impersonate you instantly."
+    },
+    {
+      "question": "What is a common behavior of fake mod tools for popular games?",
+      "choices": [
+        "Install malware while pretending to give you in-game powers",
+        "Repair corrupted files",
+        "Increase graphics",
+        "Boost FPS"
+      ],
+      "answer": "Install malware while pretending to give you in-game powers",
+      "explanation": "Fake modding tools often carry trojans, keyloggers, or ransomware hidden behind a UI pretending to be a cheat or utility."
+    },
+    {
+      "question": "What should you check before clicking a Discord invite link from a stranger?",
+      "choices": [
+        "If their username looks nice",
+        "The color of the button",
+        "If the server is verified, and the link does not lead to a spoofed domain",
+        "If it is animated"
+      ],
+      "answer": "If the server is verified, and the link doesn't lead to a spoofed domain",
+      "explanation": "Always inspect links closely. Phishing attacks often use lookalike domains (e.g., disc0rdapp.com) to trick users."
+    },
+    {
+      "question": "What is the best way to protect your Discord and gaming accounts?",
+      "choices": [
+        "Enable 2FA, avoid third-party tools, do not share logins, and use antivirus software",
+        "Only play single-player games",
+        "Change your nickname daily",
+        "Use cool usernames"
+      ],
+      "answer": "Enable 2FA, avoid third-party tools, do not share logins, and use antivirus software",
+      "explanation": "Two-factor authentication is your first defense, along with avoiding cracked software, keeping your system clean, and staying alert to social engineering."
+    },
+    {
+      "question": "What does “social engineering” often look like on Discord or in games?",
+      "choices": [
+        "Programming",
+        "Asking for feedback",
+        "Explaining civil engineering",
+        "Pretending to be a friend/mod to trick users into clicking malicious links or sharing info"
+      ],
+      "answer": "Pretending to be a friend/mod to trick users into clicking malicious links or sharing info",
+      "explanation": "Social engineers often pose as admins, support agents, or friends to steal accounts or lure you into malware traps."
+    }
+  ]
+},  
+ {
+  "module": "20. Cyber Attacks in Online Gaming Platforms",
+  "questions": [
+    {
+      "question": "Why are online gaming platforms attractive targets for cybercriminals?",
+      "choices": [
+        "They host millions of users, store valuable data, and often involve real money",
+        "They are easy to understand",
+        "They lack user engagement",
+        "They have colorful interfaces"
+      ],
+      "answer": "They host millions of users, store valuable data, and often involve real money",
+      "explanation": "Online games attract attackers due to high user activity, virtual economies, and account value (some worth thousands of dollars)."
+    },
+    {
+      "question": "Which type of cyberattack is most commonly used to steal gamer credentials?",
+      "choices": [
+        "Zero-click exploits",
+        "Phishing via fake login pages or emails",
+        "Bluetooth hijacking",
+        "SQL injection"
+      ],
+      "answer": "Phishing via fake login pages or emails",
+      "explanation": "Gamers are often targeted with phishing sites mimicking login pages or fake rewards to steal credentials."
+    },
+    {
+      "question": "What does \"account boosting\" refer to in gaming cybersecurity?",
+      "choices": [
+        "Antivirus for gaming PCs",
+        "Faster loading times",
+        "Paid services that use bots or hacked accounts to rank up a profile",
+        "Leaderboard inflation"
+      ],
+      "answer": "Paid services that use bots or hacked accounts to rank up a profile",
+      "explanation": "Account boosting can involve unauthorized access or sharing credentials, putting both security and fairness at risk."
+    },
+    {
+      "question": "What is a common purpose of cheat tools or game mods from unofficial sources?",
+      "choices": [
+        "Offer free tutorials",
+        "Help developers",
+        "Improve game design",
+        "Hide malware or spyware targeting users"
+      ],
+      "answer": "Hide malware or spyware targeting users",
+      "explanation": "Many cheat engines or mods contain keyloggers, backdoors, or cryptominers, disguising malware as “game hacks.”"
+    },
+    {
+      "question": "What cybersecurity risk is associated with in-game currencies (like V-Bucks, Gold, or Coins)?",
+      "choices": [
+        "They break the game",
+        "They are used for money laundering, fraud, or black-market trading",
+        "They expire",
+        "They overload servers"
+      ],
+      "answer": "They are used for money laundering, fraud, or black-market trading",
+      "explanation": "Criminals abuse virtual currencies for money laundering, fraudulent purchases, and untraceable transactions."
+    },
+    {
+      "question": "How can players protect themselves from fake game updates?",
+      "choices": [
+        "Use old PCs",
+        "Avoid updating games",
+        "Only download patches and mods from official game platforms or trusted sources",
+        "Turn off antivirus during updates"
+      ],
+      "answer": "Only download patches and mods from official game platforms or trusted sources",
+      "explanation": "Fake updates often hide malware. Use official launchers (like Steam, Epic, etc.) to stay safe."
+    },
+    {
+      "question": "What is a DDoS attack in the context of online games?",
+      "choices": [
+        "Device overheating",
+        "Flooding game servers with traffic to disrupt gameplay or crash them",
+        "Speeding up enemy characters",
+        "Deleting saved games"
+      ],
+      "answer": "Flooding game servers with traffic to disrupt gameplay or crash them",
+      "explanation": "Distributed Denial of Service (DDoS) attacks overwhelm game servers, leading to lags, disconnections, or complete outages."
+    },
+    {
+      "question": "How might attackers use social engineering in gaming platforms?",
+      "choices": [
+        "Rewriting code",
+        "Bribing NPCs",
+        "Pretending to be friends, admins, or clan leaders to trick users",
+        "Buying game coins"
+      ],
+      "answer": "Pretending to be friends, admins, or clan leaders to trick users",
+      "explanation": "Social engineering can happen via in-game messages, voice chat, or DMs, leading to account theft or scams."
+    },
+    {
+      "question": "What is a \"zero-day\" exploit in gaming security?",
+      "choices": [
+        "A system crash",
+        "A vulnerability in the game code unknown to the developer and exploited by attackers",
+        "Free in-game items",
+        "A day with no players"
+      ],
+      "answer": "A vulnerability in the game code unknown to the developer and exploited by attackers",
+      "explanation": "Zero-day exploits are high-risk bugs that let attackers cheat or compromise accounts before developers can patch them."
+    },
+    {
+      "question": "Why is two-factor authentication (2FA) important for gaming accounts?",
+      "choices": [
+        "Helps improve graphics",
+        "Adds an extra layer of security beyond passwords",
+        "Gives more skins",
+        "Makes the game faster"
+      ],
+      "answer": "Adds an extra layer of security beyond passwords",
+      "explanation": "With 2FA, even if your password is stolen, your account stays protected through a second verification step."
+    },
+    {
+      "question": "What risk do public game chats and voice servers pose?",
+      "choices": [
+        "Improving sound quality",
+        "Leaking personal data, location, or falling for voice phishing (vishing)",
+        "Lower bandwidth",
+        "Fun distractions"
+      ],
+      "answer": "Leaking personal data, location, or falling for voice phishing (vishing)",
+      "explanation": "Hackers can eavesdrop or trick players into revealing information over voice chats or in public messages."
+    },
+    {
+      "question": "Which of the following is NOT a good gaming cybersecurity habit?",
+      "choices": [
+        "Avoiding unofficial mods",
+        "Reusing passwords across platforms",
+        "Using 2FA",
+        "Reporting suspicious players"
+      ],
+      "answer": "Reusing passwords across platforms",
+      "explanation": "Reused passwords make you vulnerable to credential stuffing attacks if any service is breached."
+    }
+  ]
+},
+ {
+  "module": "21. Mobile Spyware and Stalkerware",
+  "questions": [
+    {
+      "question": "What is stalkerware?",
+      "choices": [
+        "Malicious software used to secretly monitor another person’s phone activity",
+        "A game about spies",
+        "Parental control software",
+        "Antivirus software gone rogue"
+      ],
+      "answer": "Malicious software used to secretly monitor another person’s phone activity",
+      "explanation": "Stalkerware is intentionally installed (often by someone close to the victim) to monitor texts, calls, GPS, and more — without consent."
+    },
+    {
+      "question": "How is mobile spyware different from desktop spyware?",
+      "choices": [
+        "It only affects printers",
+        "It targets GPS, call logs, photos, and apps on smartphones",
+        "It is more fun",
+        "It works better offline"
+      ],
+      "answer": "It targets GPS, call logs, photos, and apps on smartphones",
+      "explanation": "Mobile spyware focuses on mobile-specific data like camera access, GPS location, contacts, and microphone activity."
+    },
+    {
+      "question": "What red flag may indicate stalkerware is present on your phone?",
+      "choices": [
+        "Your battery drains faster and the phone heats up even when idle",
+        "Your screen is brighter",
+        "You have more storage space",
+        "Better performance"
+      ],
+      "answer": "Your battery drains faster and the phone heats up even when idle",
+      "explanation": "Many spyware tools run in the background, causing high battery usage and overheating, specifically during calls or while idle."
+    },
+    {
+      "question": "Which permissions are commonly abused by stalkerware?",
+      "choices": [
+        "Notification sounds",
+        "Camera, microphone, location, SMS, and accessibility services",
+        "Bluetooth and wallpaper settings",
+        "Display brightness"
+      ],
+      "answer": "Camera, microphone, location, SMS, and accessibility services",
+      "explanation": "Stalkerware requires access to sensitive permissions to record audio, track movement, read messages, and access other personal data."
+    },
+    {
+      "question": "Why is stalkerware especially dangerous?",
+      "choices": [
+        "It sends spam",
+        "It is often used in abusive relationships and hard to detect",
+        "It is slow",
+        "It is made by AI"
+      ],
+      "answer": "It is often used in abusive relationships and hard to detect",
+      "explanation": "Stalkerware is a tool of digital abuse — it operates silently, often placed by someone the victim trusts, and does not appear in the app drawer."
+    },
+    {
+      "question": "How can someone install stalkerware on your device?",
+      "choices": [
+        "Only via social media",
+        "By physically accessing your unlocked phone and sideloading apps",
+        "Through magic",
+        "Through Bluetooth pairing"
+      ],
+      "answer": "By physically accessing your unlocked phone and sideloading apps",
+      "explanation": "Most stalkerware requires physical access for installation. It is sideloaded using APKs on Android or jailbreaking on iOS."
+    },
+    {
+      "question": "What is a “stealth mode” in spyware?",
+      "choices": [
+        "It makes your apps fly",
+        "It hides the spyware icon and prevents the user from knowing it is installed",
+        "It encrypts your texts",
+        "It boosts gaming"
+      ],
+      "answer": "It hides the spyware icon and prevents the user from knowing it’s installed",
+      "explanation": "Spyware can cloak itself, avoiding detection in the app drawer or settings by using names like “System Service” or hiding entirely."
+    },
+    {
+      "question": "Which app permissions should raise concern if requested unnecessarily?",
+      "choices": [
+        "Wi-Fi and mobile data",
+        "SMS, contacts, location, microphone, and camera",
+        "Internet and calculator access",
+        "Clock and calendar"
+      ],
+      "answer": "SMS, contacts, location, microphone, and camera",
+      "explanation": "These permissions are core to tracking and surveillance. Apps asking for them without need may be spyware or stalkerware."
+    },
+    {
+      "question": "How can users protect themselves from mobile spyware?",
+      "choices": [
+        "Only use dark mode",
+        "Turn off Wi-Fi",
+        "Use strong screen locks, avoid sideloading apps, and check permission logs",
+        "Charge the phone daily"
+      ],
+      "answer": "Use strong screen locks, avoid sideloading apps, and check permission logs",
+      "explanation": "Protection starts with physical security, avoiding unofficial app stores, and regularly auditing app permissions and behavior."
+    },
+    {
+      "question": "What’s a common myth about spyware and stalkerware?",
+      "choices": [
+        "They only exist on Android",
+        "They make phones faster",
+        "They can be removed with airplane mode",
+        "They are used in cybersecurity"
+      ],
+      "answer": "They only exist on Android",
+      "explanation": "While Android is more vulnerable due to sideloading, iOS devices can still be targeted, especially if jailbroken or accessed via backups."
+    },
+    {
+      "question": "What kind of app might hide stalkerware?",
+      "choices": [
+        "Fake calculators, note apps, or battery savers",
+        "Solitaire",
+        "Music players only",
+        "YouTube"
+      ],
+      "answer": "Fake calculators, note apps, or battery savers",
+      "explanation": "Stalkerware often disguises itself as a legitimate utility app to avoid suspicion sometimes like “Battery Optimizer” or “Notepad++”."
+    },
+    {
+      "question": "Wha is the best course of action if stalkerware is suspected?",
+      "choices": [
+        "Change your ringtone",
+        "Tell your friends",
+        "Factory reset immediately",
+        "Seek professional help, use an anti-stalkerware scanner, and consider safety planning if abuse is involved"
+      ],
+      "answer": "Seek professional help, use an anti-stalkerware scanner, and consider safety planning if abuse is involved",
+      "explanation": "Stalkerware is often tied to abuse. Removing it without a safety plan can alert the abuser. Use trusted anti-stalkerware tools and consider contacting digital rights organizations."
+    }
+  ]
+},
+ {
+  "module": "22. Cloud Storage Exploits (How Hackers Abuse Dropbox, Google Drive, and iCloud)",
+  "questions": [
+    {
+      "question": "Why is cloud storage a target for cybercriminals?",
+      "choices": [
+        "It stores sensitive user and business data accessible from anywhere",
+        "It's fun to hack",
+        "It runs only on Apple devices",
+        "It's unencrypted by default"
+      ],
+      "answer": "It stores sensitive user and business data accessible from anywhere",
+      "explanation": "Services like Google Drive, iCloud, and Dropbox hold important data which includs backups, documents, passwords and can be accessed globally, making them high-value targets."
+    },
+    {
+      "question": "What is \"cloud phishing\"?",
+      "choices": [
+        "Extracting rainwater data",
+        "Using fake cloud login pages to steal credentials",
+        "Uploading videos to YouTube",
+        "Sending emails from the cloud"
+      ],
+      "answer": "Using fake cloud login pages to steal credentials",
+      "explanation": "Hackers mimic cloud service login pages (like Google Drive or iCloud) to steal usernames and passwords which is a common spear-phishing tactic."
+    },
+    {
+      "question": "How do attackers use cloud storage to deliver malware?",
+      "choices": [
+        "Through Java updates",
+        "Through USB drives",
+        "They hack the weather",
+        "They host malicious files on trusted platforms like Dropbox to bypass email filters"
+      ],
+      "answer": "They host malicious files on trusted platforms like Dropbox to bypass email filters",
+      "explanation": "Hosting malware on trusted cloud domains bypasses security filters, since links from Dropbox or Google Drive are often automatically trusted."
+    },
+    {
+      "question": "What is \"cloud abuse\" in cybersecurity terms?",
+      "choices": [
+        "Streaming too much music",
+        "Connecting via VPN",
+        "Using cloud platforms to hide malware or control botnets",
+        "When you store too many selfies"
+      ],
+      "answer": "Using cloud platforms to hide malware or control botnets",
+      "explanation": "Cybercriminals hide command-and-control servers, phishing kits, or data exfiltration paths within cloud accounts to avoid detection."
+    },
+    {
+      "question": "What happened in the 2014 iCloud celebrity photo leak?",
+      "choices": [
+        "Apple gave away data",
+        "iCloud was shut down",
+        "Attackers used phishing to access celebrity iCloud backups",
+        "Hackers brute-forced 2FA"
+      ],
+      "answer": "Attackers used phishing to access celebrity iCloud backups",
+      "explanation": "It was not a technical flaw, phishing attacks tricked victims into giving away their credentials, exposing sensitive backup photos."
+    },
+    {
+      "question": "What is the risk of auto-sync features in cloud storage apps?",
+      "choices": [
+        "They only work on Windows",
+        "They can sync infected or private files across all devices automatically",
+        "They slow your phone",
+        "They make files too large"
+      ],
+      "answer": "They can sync infected or private files across all devices automatically",
+      "explanation": "If malware or private files are added to a sync folder, they will automatically spread to all linked devices, including phones, laptops, or coworkers' computers."
+    },
+    {
+      "question": "Can cloud storage links be used in phishing campaigns?",
+      "choices": [
+        "Only through Instagram",
+        "Yes, shortened links to Google Drive or Dropbox can hide malicious payloads",
+        "Only on weekends",
+        "No, links are safe"
+      ],
+      "answer": "Yes, shortened links to Google Drive or Dropbox can hide malicious payloads",
+      "explanation": "Shortened or disguised links (like bit.ly) that redirect to cloud-hosted malware or fake login pages are commonly used in phishing emails."
+    },
+    {
+      "question": "What is “cloud misconfiguration”?",
+      "choices": [
+        "Setting the wrong theme",
+        "Leaving cloud storage or databases publicly accessible without password protection",
+        "Connecting via VPN",
+        "Logging in with Facebook"
+      ],
+      "answer": "Leaving cloud storage or databases publicly accessible without password protection",
+      "explanation": "Many organizations accidentally leave cloud storage open to the internet, exposing sensitive files to anyone with the link."
+    },
+    {
+      "question": "How can hackers use Google Drive for command-and-control (C2)?",
+      "choices": [
+        "By syncing passwords",
+        "By embedding scripts or commands in shared documents to control malware",
+        "By editing spreadsheets",
+        "They can't"
+      ],
+      "answer": "By embedding scripts or commands in shared documents to control malware",
+      "explanation": "Hackers use shared cloud documents to send commands to malware, avoiding detection since Google Drive traffic looks legitimate to firewalls."
+    },
+    {
+      "question": "Which of these is a good defense against cloud-related attacks?",
+      "choices": [
+        "Use strong passwords, 2FA, and review sharing settings",
+        "Never open emails",
+        "Auto-download everything",
+        "Turn off Wi-Fi"
+      ],
+      "answer": "Use strong passwords, 2FA, and review sharing settings",
+      "explanation": "Protecting cloud accounts means using 2FA (Two-Factor Authentication), strong unique passwords, and controlling who can access your files."
+    },
+    {
+      "question": "What does “data exfiltration” via cloud mean?",
+      "choices": [
+        "Secretly uploading stolen data to the attacker’s cloud account",
+        "Backing up vacation photos",
+        "Downloading free storage",
+        "Deleting old files"
+      ],
+      "answer": "Secretly uploading stolen data to the attacker’s cloud account",
+      "explanation": "Malware on a system can upload sensitive files to the attacker's cloud storage, quietly stealing data without raising alarms."
+    },
+    {
+      "question": "What is the most common cloud platform abused for attacks?",
+      "choices": [
+        "Yahoo Groups",
+        "Facebook Messenger",
+        "Google Drive and Dropbox due to their popularity and trusted domains",
+        "TikTok"
+      ],
+      "answer": "Google Drive and Dropbox due to their popularity and trusted domains",
+      "explanation": "Trusted platforms like Google Drive and Dropbox are frequently abused because their links are not flagged as dangerous by default."
+    }
+  ]
+},
+ {
+  "module": "23. Point-of-Sale (POS) and ATM Hacking",
+  "questions": [
+    {
+      "question": "What is the primary goal of POS (Point-of-Sale) malware?",
+      "choices": [
+        "Track inventory",
+        "Improve sales",
+        "Steal payment card data during transactions",
+        "Speed up checkout"
+      ],
+      "answer": "Steal payment card data during transactions",
+      "explanation": "POS malware is designed to capture magnetic stripe (Track 1/2) data from credit or debit cards during legitimate sales."
+    },
+    {
+      "question": "Which memory does POS malware commonly scan to capture card data?",
+      "choices": [
+        "ROM",
+        "VRAM",
+        "Cache memory",
+        "RAM (Random Access Memory)"
+      ],
+      "answer": "RAM (Random Access Memory)",
+      "explanation": "POS malware uses RAM scraping to steal card data while it is briefly unencrypted during processing."
+    },
+    {
+      "question": "What is an ATM skimmer?",
+      "choices": [
+        "A virus for mobile phones",
+        "Antivirus for banks",
+        "A physical device placed over card readers to capture card data and PINs",
+        "A new type of ATM"
+      ],
+      "answer": "A physical device placed over card readers to capture card data and PINs",
+      "explanation": "Skimmers mimic ATM card slots and secretly record card numbers and PINs using internal readers and hidden cameras."
+    },
+    {
+      "question": "Which of the following is a major sign an ATM may be tampered with?",
+      "choices": [
+        "The ATM is indoors",
+        "Loose or bulky card slot, keypad, or camera area",
+        "Touchscreen works perfectly",
+        "There’s a long line"
+      ],
+      "answer": "Loose or bulky card slot, keypad, or camera area",
+      "explanation": "Criminals install skimmers or shimmers which often do not fit seamlessly. Any wiggling or mismatched components should be treated as suspicious."
+    },
+    {
+      "question": "What is \"jackpotting\" in ATM hacking?",
+      "choices": [
+        "A fun glitch",
+        "Forcing the ATM to dispense all its cash",
+        "A reward program",
+        "A slot machine feature"
+      ],
+      "answer": "Forcing the ATM to dispense all its cash",
+      "explanation": "ATM jackpotting uses malware or physical tools to make the ATM release all its cash which is considered as a form of cash-out attack."
+    },
+    {
+      "question": "Which tool is often used to install POS malware physically?",
+      "choices": [
+        "Keyboard",
+        "USB device or malicious hardware implant",
+        "Wireless printer",
+        "Mouse pad"
+      ],
+      "answer": "USB device or malicious hardware implant",
+      "explanation": "Attackers can insert malware via USB ports or internally compromised hardware, often during off-hours or by posing as technicians."
+    },
+    {
+      "question": "What is EMV technology designed to prevent?",
+      "choices": [
+        "Printing errors",
+        "Receipt fraud",
+        "Card cloning and magnetic stripe skimming",
+        "Banking app crashes"
+      ],
+      "answer": "Card cloning and magnetic stripe skimming",
+      "explanation": "EMV (Europay, Mastercard, Visa) chips generate a unique transaction code, making stolen data useless for duplication."
+    },
+    {
+      "question": "Why are legacy POS systems especially vulnerable?",
+      "choices": [
+        "They require passwords",
+        "They’re portable",
+        "They often run outdated software like Windows XP and lack encryption",
+        "They’re too fast"
+      ],
+      "answer": "They often run outdated software like Windows XP and lack encryption",
+      "explanation": "Many POS systems still run obsolete operating systems without security patches, leaving them open to exploitation."
+    },
+    {
+      "question": "What is \"shimming\" in the context of ATM fraud?",
+      "choices": [
+        "Malware removal",
+        "A paper-thin device inserted into a chip reader to intercept data",
+        "Painting over ATMs",
+        "Screen hacking"
+      ],
+      "answer": "A paper-thin device inserted into a chip reader to intercept data",
+      "explanation": "Shimmers are advanced versions of skimmers that intercept EMV chip data from inside the card reader."
+    },
+    {
+      "question": "Which of the following helps detect tampering at ATMs?",
+      "choices": [
+        "The sound of cash",
+        "Clean keypads",
+        "Tamper-evident seals, camera surveillance, and anti-skimming devices",
+        "Friendly staff"
+      ],
+      "answer": "Tamper-evident seals, camera surveillance, and anti-skimming devices",
+      "explanation": "Banks use seals, internal sensors, surveillance, and jamming tech to prevent or detect hardware tampering."
+    },
+    {
+      "question": "What is a common entry point for POS malware in retail stores?",
+      "choices": [
+        "Loud music",
+        "Locked doors",
+        "Phishing emails targeting employees or third-party vendors",
+        "HVAC systems"
+      ],
+      "answer": "Phishing emails targeting employees or third-party vendors",
+      "explanation": "Many large breaches (like Target) began with phishing or vendor compromise, which led to POS malware deployment on the network."
+    },
+    {
+      "question": "What can individuals do to reduce risk at ATMs?",
+      "choices": [
+        "Use indoor ATMs, inspect card slots, cover keypads, and enable transaction alerts",
+        "Wear gloves",
+        "Use ATMs during rain",
+        "Type faster"
+      ],
+      "answer": "Use indoor ATMs, inspect card slots, cover keypads, and enable transaction alerts",
+      "explanation": "Protecting yourself includes vigilance, choosing secure machines, shielding your PIN, and monitoring your bank activity."
+    }
+  ]
+}, 
+ {
+  "module": "24. Quantum Threats to Modern Encryption",
+  "questions": [
+    {
+      "question": "Why is quantum computing seen as a threat to current encryption?",
+      "choices": [
+        "It can solve complex math problems that current encryption relies on",
+        "It makes computers too fast",
+        "It deletes firewalls",
+        "It slows down password checks"
+      ],
+      "answer": "It can solve complex math problems that current encryption relies on",
+      "explanation": "Quantum computers can potentially crack RSA, ECC, and other widely used encryption systems by solving problems like factoring and discrete logarithms much faster than classical computers."
+    },
+    {
+      "question": "What is the name of the quantum algorithm that can factor large numbers efficiently?",
+      "choices": [
+        "Diffie-Hellman",
+        "Shor’s Algorithm",
+        "Grover's Algorithm",
+        "Newton’s Algorithm"
+      ],
+      "answer": "Shor’s Algorithm",
+      "explanation": "Shor’s Algorithm threatens RSA encryption by efficiently factoring large integers, something that would take classical computers centuries."
+    },
+    {
+      "question": "Which encryption method is most vulnerable to being broken by quantum computers?",
+      "choices": [
+        "AES",
+        "Argon2",
+        "RSA (Rivest–Shamir–Adleman)",
+        "SHA-3"
+      ],
+      "answer": "RSA (Rivest–Shamir–Adleman)",
+      "explanation": "RSA’s security depends on the difficulty of factoring large primes, a problem that quantum computing can tackle using Shor’s Algorithm."
+    },
+    {
+      "question": "What kind of cryptographic algorithms are being developed to resist quantum attacks?",
+      "choices": [
+        "Legacy protocols",
+        "Predictive hashing",
+        "Post-quantum cryptography (PQC)",
+        "Bitcoin mining algorithms"
+      ],
+      "answer": "Post-quantum cryptography (PQC)",
+      "explanation": "PQC refers to new cryptographic schemes that can withstand attacks even from powerful quantum computers."
+    },
+    {
+      "question": "What is a potential risk of “harvest now, decrypt later” attacks?",
+      "choices": [
+        "Hackers collecting rainwater",
+        "Attackers steal encrypted data now, then decrypt it in the future using quantum tech",
+        "Encrypting fake files",
+        "Viruses that grow over time"
+      ],
+      "answer": "Attackers steal encrypted data now, then decrypt it in the future using quantum tech",
+      "explanation": "Even if attackers cannot decrypt your data today, they may store it and crack it later when quantum computers become capable."
+    },
+    {
+      "question": "Grover’s Algorithm poses a threat to which kind of cryptographic functions?",
+      "choices": [
+        "Elliptic curve signatures",
+        "Symmetric encryption and hashing",
+        "Public-key encryption",
+        "Firewall protocols"
+      ],
+      "answer": "Symmetric encryption and hashing",
+      "explanation": "Grover’s Algorithm can cut brute-force search time in half, affecting symmetric encryption like AES (e.g. AES-128 becomes AES-64 strength)."
+    },
+    {
+      "question": "Which U.S. agency is leading the development of quantum-resistant standards?",
+      "choices": [
+        "FBI",
+        "NIST (National Institute of Standards and Technology)",
+        "NASA",
+        "NSA"
+      ],
+      "answer": "NIST (National Institute of Standards and Technology)",
+      "explanation": "NIST is working to standardize post-quantum algorithms, running a global competition to identify strong candidates."
+    },
+    {
+      "question": "Which of the following is a current post-quantum algorithm finalist by NIST?",
+      "choices": [
+        "Kyber",
+        "SHA-Zero",
+        "AES-Quantum",
+        "SHA-256++"
+      ],
+      "answer": "Kyber",
+      "explanation": "Kyber is a lattice-based key encapsulation mechanism and one of the top finalists selected by NIST for standardization."
+    },
+    {
+      "question": "What is a main advantage of symmetric encryption over public-key methods in a post-quantum world?",
+      "choices": [
+        "It uses emojis",
+        "It requires smaller key sizes and is more resistant to quantum attacks",
+        "It is older",
+        "It can be written in any language"
+      ],
+      "answer": "It requires smaller key sizes and is more resistant to quantum attacks",
+      "explanation": "Symmetric systems like AES-256 are considered more resistant, requiring only minor key-size upgrades to remain secure post-quantum."
+    },
+    {
+      "question": "What is “lattice-based cryptography”?",
+      "choices": [
+        "A math-based approach believed to resist quantum attacks",
+        "A visual CAPTCHA",
+        "A password manager",
+        "A pattern for blockchain"
+      ],
+      "answer": "A math-based approach believed to resist quantum attacks",
+      "explanation": "Lattice problems are hard for both classical and quantum computers as forming the basis of many PQC candidates like Kyber, Dilithium, and NTRU."
+    },
+    {
+      "question": "What could happen if governments delay implementing post-quantum encryption?",
+      "choices": [
+        "Technology will be cheaper",
+        "Critical infrastructure and personal data could be decrypted in the future",
+        "Games will load faster",
+        "We will have stronger VPNs"
+      ],
+      "answer": "Critical infrastructure and personal data could be decrypted in the future",
+      "explanation": "A slow transition means sensitive data collected today could be decrypted by adversaries tomorrow, causing national and personal-level security risks."
+    },
+    {
+      "question": "What is the best cybersecurity practice for preparing for the quantum future?",
+      "choices": [
+        "Use incognito mode",
+        "Begin migrating to hybrid or quantum-safe cryptography today",
+        "Stop encrypting files",
+        "Wait for quantum iPhones"
+      ],
+      "answer": "Begin migrating to hybrid or quantum-safe cryptography today",
+      "explanation": "Businesses and governments are starting to use hybrid cryptographic models (classical + post-quantum) to ensure future-proof security."
+    }
+  ]
+},
+ {
+  "module": "25. Hacktivism and Geopolitical Cyberwarfare",
+  "questions": [
+    {
+      "question": "What is \"hacktivism\"?",
+      "choices": [
+        "Hacking used as a form of political or social protest",
+        "A mistake caused by hacking",
+        "Hacking schools and education platforms",
+        "Hacking with AI tools"
+      ],
+      "answer": "Hacking used as a form of political or social protest",
+      "explanation": "Hacktivism blends hacking + activism, using cyberattacks to raise awareness, protest, or disrupt targets seen as unethical or oppressive."
+    },
+    {
+      "question": "Which of the following groups is best known for hacktivist operations?",
+      "choices": [
+        "FIN7",
+        "Anonymous",
+        "Lapsus$",
+        "Pegasus"
+      ],
+      "answer": "Anonymous",
+      "explanation": "Anonymous is a decentralized hacktivist collective known for attacking governments, corporations, and extremist groups to support free speech and anti-corruption efforts."
+    },
+    {
+      "question": "What's a common tactic used by hacktivist groups?",
+      "choices": [
+        "DDoS (Distributed Denial of Service) attacks",
+        "Ransomware deployment",
+        "Insider threats",
+        "SQL injection on banks"
+      ],
+      "answer": "DDoS (Distributed Denial of Service) attacks",
+      "explanation": "DDoS attacks are popular among hacktivists, they flood websites or services with traffic to disrupt access and make statements."
+    },
+    {
+      "question": "Which is an example of hacktivism?",
+      "choices": [
+        "Using Tor to watch Netflix",
+        "Hacking banks for profit",
+        "Defacing a government website to protest censorship",
+        "Spying on citizens through malware"
+      ],
+      "answer": "Defacing a government website to protest censorship",
+      "explanation": "Website defacements with political messages or protest slogans are classic hacktivist tactics to make their message public."
+    },
+    {
+      "question": "What is “cyberwarfare”?",
+      "choices": [
+        "Fighting malware with AI",
+        "The use of digital attacks by nations to disrupt or damage enemy infrastructure",
+        "Fighting video game players",
+        "Simulated military games"
+      ],
+      "answer": "The use of digital attacks by nations to disrupt or damage enemy infrastructure",
+      "explanation": "Cyberwarfare involves state-sponsored cyberattacks on critical infrastructure, like power grids, satellites, and communication systems."
+    },
+    {
+      "question": "Stuxnet was a famous example of:",
+      "choices": [
+        "A spyware app for phones",
+        "A password cracker",
+        "A bitcoin miner",
+        "A cyberweapon designed to damage Iran’s nuclear program"
+      ],
+      "answer": "A cyberweapon designed to damage Iran’s nuclear program",
+      "explanation": "Stuxnet, allegedly developed by the U.S. and Israel, targeted Iran’s uranium centrifuges, the first known real-world cyberweapon."
+    },
+    {
+      "question": "How do nation-states often hide their involvement in cyberwarfare?",
+      "choices": [
+        "They broadcast it on news",
+        "They use proxy groups or fake identities",
+        "They sign the attacks",
+        "They leave clear evidence"
+      ],
+      "answer": "They use proxy groups or fake identities",
+      "explanation": "Countries often use proxy hacker groups, botnets, or malware obfuscation to avoid direct blame or diplomatic fallout."
+    },
+    {
+      "question": "What is a “false flag” cyberattack?",
+      "choices": [
+        "A backup plan for hackers",
+        "An attack made to appear as if it came from another country or group",
+        "When a virus comes with a warning flag",
+        "Government-approved malware"
+      ],
+      "answer": "An attack made to appear as if it came from another country or group",
+      "explanation": "A false flag attack is meant to frame another group or nation, increasing tension or misdirecting blame."
+    },
+    {
+      "question": "What risk does hacktivism pose during geopolitical tensions?",
+      "choices": [
+        "It improves privacy laws",
+        "It can escalate conflicts between countries",
+        "It fixes vulnerabilities",
+        "It boosts internet speed"
+      ],
+      "answer": "It can escalate conflicts between countries",
+      "explanation": "Hacktivist attacks during wars or political disputes may accidentally trigger military or diplomatic retaliation, blurring lines between activists and state actors."
+    },
+    {
+      "question": "Why is attribution (knowing who did it) hard in cyberwarfare?",
+      "choices": [
+        "Attackers use encryption, proxies, and misdirection",
+        "Countries announce their operations",
+        "Hackers always leave clues",
+        "Logs are public"
+      ],
+      "answer": "Attackers use encryption, proxies, and misdirection",
+      "explanation": "Cyberattacks are difficult to trace because hackers mask IPs, use fake identities, or reroute traffic through global servers."
+    },
+    {
+      "question": "What role do patriotic hacking groups play in modern cyber conflicts?",
+      "choices": [
+        "They provide free antivirus",
+        "They launch attacks in support of their country even unofficially",
+        "They defend government systems",
+        "They write media blogs"
+      ],
+      "answer": "They launch attacks in support of their country even unofficially",
+      "explanation": "These groups are not always officially tied to governments but often carry out cyberattacks that align with national interests, such as in the Russian-Ukranian conflict."
+    },
+    {
+      "question": "What is a smart way to prepare for geopolitical cyber threats?",
+      "choices": [
+        "Avoid online activism",
+        "Strengthen national cyber defenses and raise public awareness",
+        "Use VPNs to hide your country",
+        "Store passwords in notepads"
+      ],
+      "answer": "Strengthen national cyber defenses and raise public awareness",
+      "explanation": "Governments and citizens alike need robust cyber hygiene, strong infrastructure defenses, and crisis response plans in a world where cyberwar is real."
+    }
+  ]
+}
+]
