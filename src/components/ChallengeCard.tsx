@@ -58,6 +58,8 @@ const ChallengeCard = ({
       navigate('/phishing-intro');
     } else if (title === "CTF Challenges") {
       navigate('/least-privilege-intro');
+    } else if (title === "Secure Coding") {
+      navigate('/secure-coding-intro');
     } else if (title === "Security Quiz") {
       navigate('/security-quiz-intro');
     } else if (title === "Encryption") {

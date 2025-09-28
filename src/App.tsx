@@ -13,6 +13,9 @@ import LeastPrivilegeIncident from "./pages/LeastPrivilegeIncident";
 import SecurityQuizIntro from "./pages/SecurityQuizIntro";
 import SecurityQuizGame from "./pages/SecurityQuizGame";
 import SecurityQuizResults from "./pages/SecurityQuizResults";
+import SecureCodingIntro from "./pages/SecureCodingIntro";
+import SecureCodingGame from "./pages/SecureCodingGame";
+import SecureCodingResults from "./pages/SecureCodingResults";
 import EncryptionIntro from "./pages/EncryptionIntro";
 import EncryptionGame from "./pages/EncryptionGame";
 import EncryptionResults from "./pages/EncryptionResults";
@@ -32,6 +35,9 @@ const App = () => (
           <Route path="/least-privilege-intro" element={<LeastPrivilegeIntro />} />
           <Route path="/least-privilege-game" element={<LeastPrivilegeGame />} />
           <Route path="/least-privilege-incident" element={<LeastPrivilegeIncident />} />
+          <Route path="/secure-coding-intro" element={<SecureCodingIntro />} />
+          <Route path="/secure-coding-game" element={<SecureCodingGame />} />
+          <Route path="/secure-coding-results" element={<SecureCodingResults />} />
           <Route path="/security-quiz-intro" element={<SecurityQuizIntro />} />
           <Route path="/security-quiz-game" element={<SecurityQuizGame />} />
           <Route path="/security-quiz-results" element={<SecurityQuizResults />} />
